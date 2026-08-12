@@ -5,6 +5,9 @@ __pycache__/
 checkpoints/
 data/raw/
 data/processed/
+data/tinystories/
+data/wikitext_sample.txt
+tokenizer/tokenizer.json
 
 *.pt
 *.pth
