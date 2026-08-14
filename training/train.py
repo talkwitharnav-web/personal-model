@@ -28,6 +28,10 @@ def get_batch(split, batch_size):
 eval_every = 250
 eval_iters = 20
 
+best_val_loss = float("inf")
+patience = 5
+patience_counter = 0
+
 @torch.no_grad()
 def estimate_val_loss():
     model.eval()
@@ -58,7 +62,9 @@ if os.path.exists(checkpoint_path):
     optimizer.load_state_dict(checkpoint["optimizer"])
     scaler.load_state_dict(checkpoint["scaler"])
     start_step = checkpoint["step"] + 1
-    print(f"Resumed from checkpoint at step {start_step}")
+    best_val_loss = checkpoint.get("best_val_loss", best_val_loss)
+    patience_counter = checkpoint.get("patience_counter", patience_counter)
+    print(f"Resumed from checkpoint at step {start_step} (best_val_loss={best_val_loss:.4f}, patience={patience_counter}/{patience})")
 
 grad_accum_steps = 4
 max_steps = 38316  # one full epoch over train.bin at batch_size=16, grad_accum=4
@@ -89,11 +95,25 @@ for step in range(start_step, max_steps):
         val_loss = estimate_val_loss()
         print(f"Step {step}/{max_steps} | Validation Loss: {val_loss:.4f}")
 
+        if val_loss < best_val_loss:
+            best_val_loss = val_loss
+            patience_counter = 0
+            torch.save(model.state_dict(), "checkpoints/best_model.pt")
+        else:
+            patience_counter += 1
+            print(f"No improvement. Patience: {patience_counter}/{patience}")
+
+        if patience_counter >= patience:
+            print("Validation loss stopped improving. Stopping training early.")
+            break
+
     if (step + 1) % save_every == 0:
         torch.save({
             "model": model.state_dict(),
             "optimizer": optimizer.state_dict(),
             "scaler": scaler.state_dict(),
             "step": step,
+            "best_val_loss": best_val_loss,
+            "patience_counter": patience_counter,
         }, checkpoint_path)
         print(f"Saved checkpoint at step {step}")

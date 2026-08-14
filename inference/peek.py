@@ -9,20 +9,22 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 config = DarkGLMConfig()
 
 model = DarkGLM(config).to(device)
-checkpoint = torch.load("checkpoints/latest.pt", map_location=device)
-model.load_state_dict(checkpoint["model"])
+model.load_state_dict(torch.load("checkpoints/wikipedia_best_model.pt", map_location=device))
 model.eval()
-print(f"Loaded checkpoint from step {checkpoint['step']}")
+print("Loaded checkpoints/wikipedia_best_model.pt")
 
 tokenizer = Tokenizer.from_file("tokenizer/tokenizer.json")
 
-prompt = "Once upon a time, there was a"
+# Plain factual continuation, matching Wikipedia's raw-text (not User:/Assistant:) format
+prompt = "YOU CAN RUN BUT YOU CAN'T HIDE"
 input_ids = tokenizer.encode(prompt).ids
 input_ids = torch.tensor([input_ids], dtype=torch.long, device=device)
 
-max_new_tokens = 700
+max_new_tokens = 100
 temperature = 0.8
 top_k = 50
+repetition_penalty = 1.3
+endoftext_id = tokenizer.token_to_id("<|endoftext|>")
 
 with torch.no_grad():
     for _ in range(max_new_tokens):
@@ -30,11 +32,22 @@ with torch.no_grad():
         logits = model(input_crop)
         logits = logits[:, -1, :] / temperature
 
+        # push down scores of tokens already used, so it can't loop on the same phrase forever
+        for token_id in set(input_ids[0].tolist()):
+            if logits[0, token_id] > 0:
+                logits[0, token_id] /= repetition_penalty
+            else:
+                logits[0, token_id] *= repetition_penalty
+
         top_values, top_indices = torch.topk(logits, top_k)
         probs = torch.softmax(top_values, dim=-1)
         next_token = top_indices.gather(-1, torch.multinomial(probs, num_samples=1))
 
         input_ids = torch.cat([input_ids, next_token], dim=1)
+
+        # stop as soon as the model itself signals "done", same token that ends every training example
+        if next_token.item() == endoftext_id:
+            break
 
 output_text = tokenizer.decode(input_ids[0].tolist())
 print("\n--- Generated text ---")
