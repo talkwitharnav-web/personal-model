@@ -1,0 +1,36 @@
+[2026-08-19 03:29:21] fine-tune peek monitor started | every 900s | max 7.0h | watching checkpoints\finetune_v2_latest.pt
+[2026-08-19 03:29:21] waiting for checkpoints\finetune_v2_latest.pt ...
+[2026-08-19 03:44:38] step 2,000 | best val 1.7106 | blank 0/6 | stopped cleanly 6/6 | max loop 0.0 | free RAM 6,204 MB
+[2026-08-19 03:44:38]     definition   'Yes'
+[2026-08-19 03:44:38]     binding      'Nikola Tesla'
+[2026-08-19 03:44:38]     yesno        'Yes'
+[2026-08-19 03:44:38]     maths        'Natalia sold more than 50 clips to 48 friends in April, then half as many in May.'
+[2026-08-19 03:44:38]     chat         "It's a bright red colour."
+[2026-08-19 03:44:38]     instruction  'The dog is a dog that is a humanoid.'
+[2026-08-19 03:44:38]     no collapse signals
+[2026-08-19 03:59:52] step 5,000 | best val 1.6340 | blank 0/6 | stopped cleanly 5/6 | max loop 0.676 | free RAM 5,561 MB
+[2026-08-19 03:59:52]     definition   'a resonant transformer circuit invented by Nikola Tesla in 1891'
+[2026-08-19 03:59:52]     binding      'Alexander Fleming'
+[2026-08-19 03:59:52]     yesno        'Yes'
+[2026-08-19 03:59:52]     maths        'Natalia sold a total of 48 + 48 = 48 clips\nShe sold a total of 48 + 48 = 48 clips\nShe sold a total of 48 + 48 '
+[2026-08-19 03:59:52]     chat         "It's a combination of the colours of the sun and the moon."
+[2026-08-19 03:59:52]     instruction  'The dog is a dog.'
+[2026-08-19 03:59:52]   ** LOOPING: repeated 5-grams at 0.68
+[2026-08-19 04:15:02] step 7,000 | best val 1.6095 | blank 0/6 | stopped cleanly 5/6 | max loop 0.676 | free RAM 5,636 MB
+[2026-08-19 04:15:02]     definition   'It is a resonant transformer circuit invented by Nikola Tesla in 1891.'
+[2026-08-19 04:15:02]     binding      'It was discovered by Alexander Fleming in 1928.'
+[2026-08-19 04:15:02]     yesno        'Yes'
+[2026-08-19 04:15:02]     maths        'Natalia sold a total of 48 + 48 = 48 clips\nShe sold a total of 48 + 48 = 48 clips\nShe sold a total of 48 + 48 '
+[2026-08-19 04:15:02]     chat         "It's a bright and cheerful colour."
+[2026-08-19 04:15:02]     instruction  "A dog is a good name for a dog. It's a good name for a dog."
+[2026-08-19 04:15:02]   ** LOOPING: repeated 5-grams at 0.68
+[2026-08-19 04:30:02] SKIPPING this peek - only 2,636 MB free (need 3,200). Never risk the run being watched.
+[2026-08-19 04:45:02] SKIPPING this peek - only 2,145 MB free (need 3,200). Never risk the run being watched.
+[2026-08-19 05:00:43] step 9,000 | best val 1.5925 | blank 0/6 | stopped cleanly 6/6 | max loop 0.261 | free RAM 3,789 MB
+[2026-08-19 05:00:43]     definition   'a resonant transformer circuit invented by Nikola Tesla in 1891'
+[2026-08-19 05:00:43]     binding      'Alexander Fleming'
+[2026-08-19 05:00:43]     yesno        'Yes'
+[2026-08-19 05:00:43]     maths        'Natalia sold a total of 48 + 48 = 48 clips\nShe sold a total of 48 + 48 = 48 clips\nSo the answer is 48.'
+[2026-08-19 05:00:43]     chat         "It's a very popular colour."
+[2026-08-19 05:00:43]     instruction  'A dog is a good person.'
+[2026-08-19 05:00:43]     no collapse signals

@@ -16,5 +16,7 @@ for hf_split, out_split in split_map.items():
         for example in dataset[hf_split]:
             goal = example["goal"].strip()
             solution = example["sol1"] if example["label"] == 0 else example["sol2"]
-            f.write(f"User: {goal}\nAssistant: {solution.strip()}\n<|endoftext|>\n")
+            # Both solutions look reasonable; without seeing them the model can only guess.
+            options = "\n".join(f"- {s.strip()}" for s in (example["sol1"], example["sol2"]))
+            f.write(f"User: {goal}\n\nOptions:\n{options}\nAssistant: {solution.strip()}\n<|endoftext|>\n")
     print(f"Done: {out_path}")

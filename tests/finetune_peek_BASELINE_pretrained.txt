@@ -1,0 +1,12 @@
+[2026-08-19 01:08:46] fine-tune peek monitor started | every 900s | max 6.0h
+[2026-08-19 01:08:46] waiting for checkpoints\finetune_v2_latest.pt ...
+[2026-08-19 01:14:09] fine-tune peek monitor started | every 900s | max 6.0h | watching checkpoints\pretrain_v2_latest.pt
+[2026-08-19 01:14:26] step 122,000 | best val 2.7733 | blank 0/6 | stopped cleanly 0/6 | max loop 0.774
+[2026-08-19 01:14:26]     definition   'The Tesla coil is a coil that is a coil that is a coil that is a coil that is a coil that is a coil that is a '
+[2026-08-19 01:14:27]     binding      'The first person to discover a penicillin is the inventor of the first penicillin.'
+[2026-08-19 01:14:27]     yesno        'The Sun is the star at the center of the Solar System. Its surface temperature is about 5,000 degrees Celsius,'
+[2026-08-19 01:14:27]     maths        'Natalia sold clips to 48 friends in May, then half as many in June, then half as many in July, then half as ma'
+[2026-08-19 01:14:27]     chat         'The name of the colour is "C" and the name of the colour is "C" (the name of the colour is "C" and the name of'
+[2026-08-19 01:14:27]     instruction  'Write one sentence about a dog.'
+[2026-08-19 01:14:27]   ** SUBJECT ECHO: the definition answer starts by repeating the subject
+[2026-08-19 01:14:27]   ** LOOPING: repeated 5-grams at 0.77

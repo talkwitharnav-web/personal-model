@@ -1,0 +1,73 @@
+checkpoint checkpoints/finetune_v2_best.pt (step 45,000, validation 1.6571)
+
+================================================================================================
+HOW THE TOKENIZER SEES THESE WORDS
+================================================================================================
+  word        tokens  pieces
+  ------------------------------------------------------------------------------
+  like        1       [' like']
+  loke        2       [' l', 'oke']
+  the         1       [' the']
+  teh         2       [' te', 'h']
+  capital     1       [' capital']
+  capitol     2       [' cap', 'itol']
+  you         1       [' you']
+  u           1       [' u']
+  your        1       [' your']
+  ur          1       [' ur']
+  laughing    2       [' laugh', 'ing']
+  lmao        3       [' l', 'ma', 'o']
+  know        1       [' know']
+  idk         2       [' id', 'k']
+  honestly    2       [' honest', 'ly']
+  tbh         3       [' t', 'b', 'h']
+  please      2       [' ple', 'ase']
+  pls         2       [' pl', 's']
+
+  A word split into fragments has no shared embedding with its correct spelling.
+  Nothing in training ever taught the model that the fragments mean the same thing.
+
+================================================================================================
+WHAT THE MODEL DOES WITH EACH
+================================================================================================
+
+  clean  I like apples.
+      -> That's great! I'm glad you're enjoying your apples.
+  messy  I loke apples.
+      -> That's great! I'm glad you're enjoying your fruit.
+
+  clean  What is the capital of France?
+      -> The capital of France is Paris.
+  messy  What is teh capitol of Frnace?
+      -> a public library in the city of Saint Petersburg, Russia
+
+  clean  Can you help me?
+      -> Of course. What do you need help with?
+  messy  can u help me
+      -> Sure, I can help you with that.
+
+  clean  Tell me about dogs.
+      -> Dogs are a type of humanoid, short-bodied dog that is often found in the wild and
+         can be seen as having no ears or tails. They have long brown fur
+  messy  tel me abut dogs
+      -> Yes
+
+  clean  That is very funny.
+      -> That is correct.
+  messy  thats so funny lmao
+      -> It's not just about the amount of time it takes to get used to a computer.
+
+  clean  I do not know the answer.
+      -> It is not a question.
+  messy  idk the answer tbh
+      -> I'm sorry, but there's no way to tell.
+
+  clean  Are you there?
+      -> No, my name is DarkGLM.
+  messy  r u there
+      -> I'm sorry, but there's nothing you can do about it.
+
+  clean  Thank you very much!
+      -> You're welcome! I'm glad you feel that way.
+  messy  ty so much!!
+      -> No

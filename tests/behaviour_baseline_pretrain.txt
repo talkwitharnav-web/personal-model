@@ -1,0 +1,52 @@
+checkpoint checkpoints\pretrain_v2_best.pt | step 130,000 | validation 2.7667
+
+=== open-ended (greedy) ===
+  [echo    ] MISS What is a Tesla coil?                               
+             -> 'The Tesla coil is a coil that is a coil that is a coil that is a coil that is a coil that is a coil that is a '
+  [length  ] MISS What is a Tesla coil?                               
+             -> 'The Tesla coil is a coil that is a coil that is a coil that is a coil that is a coil that is a coil that is a '
+  [echo    ] ok   Who is William Shakespeare?                         
+             -> 'William Shakespeare was a Shakespearean actor, playwright and actor, who was the first Shakespearean actor to '
+  [binding ] ok   Who invented the Tesla coil?                        
+             -> 'The Tesla coil is a coil that is used to make the coil.\nChemistry\nThe coil is a liquid coil with a liquid-like'
+  [binding ] MISS Who discovered penicillin?                          
+             -> 'The first person to discover the Penicillin is the German chemist and chemist Fritz W. Schröder.\nChemistry\nThe'
+  [length  ] ok   When was the Tesla coil invented?                   
+             -> 'The Tesla coil is a coil invented by Alexander Fleming in 1891. Penicillin is a coil invented by Alexander Fle'
+  [maths   ] MISS Natalia sold clips to 48 friends in April, then half
+             -> 'Natalia sold clips to 48 friends in May, then half as many in May, then half as many in June, and half as many'
+  [maths   ] MISS Weng earns $12 an hour. She babysat for 30 minutes. 
+             -> 'Weng earns $10 an hour.\nCareer\nIn the early 1990s, she was a member of the Weng family, a family of businesswo'
+
+=== yes/no (P(Yes) vs P(No)) ===
+  [polarity] n/a  Is the sun hot?                                want Yes | Yes 0.0001 No 0.0007   <- not answering yes/no
+  [polarity] n/a  Is the sun cold?                               want No  | Yes 0.0001 No 0.0007   <- not answering yes/no
+  [polarity] n/a  Do fish have gills?                            want Yes | Yes 0.0000 No 0.0008   <- not answering yes/no
+  [polarity] n/a  Do fish have lungs?                            want No  | Yes 0.0000 No 0.0008   <- not answering yes/no
+  [natural ] n/a  is coconut oil high in saturated fat           want Yes | Yes 0.0000 No 0.0003   <- not answering yes/no
+  [natural ] n/a  is coconut oil low in saturated fat            want No  | Yes 0.0000 No 0.0003   <- not answering yes/no
+  [binding ] n/a  Was the Tesla coil invented by Nikola Tesla?   want Yes | Yes 0.0000 No 0.0012   <- not answering yes/no
+  [binding ] n/a  Was the Tesla coil invented by Alexander Flemi want No  | Yes 0.0001 No 0.0016   <- not answering yes/no
+  [natural ] n/a  Did Nikola Tesla invent the Tesla coil?        want Yes | Yes 0.0000 No 0.0015   <- not answering yes/no
+  [natural ] n/a  Did Alexander Fleming invent the Tesla coil?   want No  | Yes 0.0001 No 0.0018   <- not answering yes/no
+  ** 10/10 cases: the model is not producing a yes/no answer at all (both probabilities < 0.01).
+     Expected for a PRETRAINED checkpoint - it has never seen this format.
+
+=== polarity separation (the defect a per-question score hides) ===
+  MISS P(Yes) 0.0001 vs 0.0001 | gap 0.0000  'Is the sun hot?' vs 'Is the sun cold?'
+  MISS P(Yes) 0.0000 vs 0.0000 | gap 0.0000  'Do fish have gills?' vs 'Do fish have lungs?'
+  MISS P(Yes) 0.0000 vs 0.0000 | gap 0.0000  'is coconut oil high in saturated f' vs 'is coconut oil low in saturated fa'
+
+=== summary ===
+  echo         1/2  ##########
+  polarity     0/4  
+  separation   0/3  
+  binding      1/4  #####
+  natural      0/4  
+  length       1/2  ##########
+  stopping     0/8  
+  refusal      8/8  ####################
+  maths        0/2  
+  OVERALL     11/37 (30%)
+
+Select fine-tune checkpoints on THIS, not on validation loss alone (section 8).

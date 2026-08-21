@@ -5,18 +5,19 @@ from tokenizers import Tokenizer
 from model.config import DarkGLMConfig
 from model.model import DarkGLM
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+# CPU on purpose: combined training is using nearly all 8GB of VRAM right now.
+device = "cpu"
 config = DarkGLMConfig()
 
 model = DarkGLM(config).to(device)
-model.load_state_dict(torch.load("checkpoints/wikipedia_best_model.pt", map_location=device))
+model.load_state_dict(torch.load("checkpoints/combined_best_model.pt", map_location=device))
 model.eval()
-print("Loaded checkpoints/wikipedia_best_model.pt")
+print("Loaded checkpoints/combined_best_model.pt")
 
 tokenizer = Tokenizer.from_file("tokenizer/tokenizer.json")
 
-# Plain factual continuation, matching Wikipedia's raw-text (not User:/Assistant:) format
-prompt = "YOU CAN RUN BUT YOU CAN'T HIDE"
+# Instruction format the combined dataset was trained on
+prompt = "User: What's the temperature in the arctic?\nAssistant:"
 input_ids = tokenizer.encode(prompt).ids
 input_ids = torch.tensor([input_ids], dtype=torch.long, device=device)
 

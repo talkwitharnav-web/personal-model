@@ -1,0 +1,141 @@
+Independent falsification report
+Run: checkpoints/finetune_v2_best.pt on CUDA
+Runtime: 82.2 seconds
+Raw records: tests/independent_claims_verification.json
+
+1. REPLICATED — dropping history when retrieval fires
+
+Design: six new factual questions, two seeded generations per question, auto routing, and
+three-turn histories written for this test. Conversational and factual-sounding histories were
+reported separately. Every question retrieved, and every retrieved set contained the answer.
+
+Conversational history:
+  kept     8/12 = 66.7%
+  dropped 12/12 = 100.0%
+
+Factual-sounding history:
+  kept     4/12 = 33.3%
+  dropped 12/12 = 100.0%
+
+Confound/alternative explanation: the effect is real, but “chatty register” is not a sufficient
+explanation. Factual-sounding history was even more damaging than conversational history, despite
+nearly identical prompt lengths (272 vs 270 tokens). Generic recency interference or attention
+competition fits these results better than a specifically conversational-register effect.
+
+2. PARTIALLY REPLICATED — all-caps normalization
+
+Design: six new factual questions with two seeded generations each. The pipeline normalizer was
+temporarily replaced with identity for the raw-caps arm, then restored. Raw caps, live-normalized
+caps, and lowercase were compared with identical seeds.
+
+  raw caps       4/12 = 33.3%
+  normalized     6/12 = 50.0%
+  lowercase      6/12 = 50.0%
+
+Normalization fixed 2/12 paired cases, regressed 0/12, and left 10/12 unchanged. Live-normalized
+answers equaled lowercase answers in 12/12 cases. Routes and retrieved passages were also identical
+in 12/12 pairs, while mean token count fell from 16.7 to 7.8; this isolates generator tokenization
+rather than retrieval as the useful mechanism.
+
+Acronym regression checks:
+  six ordinary mixed-case acronym questions were not transformed and produced identical answers
+  with identity/live normalization (6/6).
+  six terse acronym/proper-name probes did cross the threshold; strict-key accuracy was 2/6 raw
+  versus 1/6 normalized. One apparent loss (“Turtle Bay” for UN headquarters) is arguably correct,
+  so this is a risk signal, not a proven semantic regression.
+
+Confound/overclaim: caps did not universally “break” answers; only one of six question types was
+rescued. The docstring’s claim that the rule fires only on genuine shouting is mechanically false
+for terse acronym/proper-name input.
+
+3. REFUTED — opening-verb frequency explains imperative accuracy
+
+Design: counts were re-derived by streaming all current data/*/train.txt User: lines
+(1,373,821 turns). Because current source files no longer match the checkpoint, a timestamp-filtered
+declared-mix proxy was also calculated (1,072,910 turns). Fifteen verbs, including unlisted verbs
+with zero or near-zero counts, were tested on the same five facts (N=5 per verb). A second arm gave
+every verb the same hand-written answer-bearing context, removing router/retriever variation.
+
+Examples of checkpoint-time proxy counts:
+  explain 4,636; give 4,518; tell 4,480; write 4,327; describe 4,152
+  name 288; provide 146; show 44; identify 20; state 13
+  report 8; supply 5; mention 1; specify 0; recall 0
+
+Natural pipeline:
+  high-frequency verbs (>=1,000)  7/25 = 28.0%
+  medium (100-999)                2/10 = 20.0%
+  low (<100)                     16/40 = 40.0%
+  Spearman(log count, accuracy) = -0.349
+  passage-supported-only Spearman = -0.410
+
+Identical fixed context:
+  high 13/25 = 52.0%; medium 5/10 = 50.0%; low 21/40 = 52.5%
+  Spearman(log count, accuracy) = 0.010
+
+Question-form control was 3/5 = 60.0%.
+
+Confounds in the original causal story: route category, retrieval quality, task semantics, source
+caps, length filtering, typo-augmentation duplication, and post-checkpoint data changes. In
+particular, instruction_shapes and greetings postdate the evaluated checkpoint, and the packed
+arrays were rebuilt after it; current text counts are not the checkpoint’s exposure counts.
+
+4. PARTIALLY REPLICATED — verdict-word bias is confined to OOD requests
+
+Design: ten new format probes in chat and auto modes (never pooled). Real held-out next turns were
+sampled with their true histories from SODA and PersonaChat: eight open/statement turns and eight
+yes/no-form turns per corpus. References were scored with the same first-word rule.
+
+Format probes:
+  chat:  1/10 = 10.0% opened with a verdict word; retrieval 0%
+  auto:  5/10 = 50.0% opened with a verdict word; retrieval 100%
+
+Held-out open/statement turns:
+  SODA        0/8 = 0%
+  PersonaChat 0/8 = 0%
+
+Held-out yes/no-form turns:
+  SODA generated 3/8 = 37.5%; references 3/8 = 37.5%
+  PersonaChat generated 5/8 = 62.5%; references 3/8 = 37.5%
+  verdict-only answers were 0/32 across held-out turns.
+
+The inappropriate fallback is concentrated on format probes, so that part replicates. The stated
+20.8% versus 2.1% rates do not: format rate was 10% or 50% depending on mode. “Only OOD” also
+confuses legitimate Yes/No openings on in-distribution yes/no questions with bias.
+
+Primary confound: retrieval/mode, not OOD status alone. Pooling chat and auto would hide a
+fivefold difference. Question grammatical form and reference-answer base rate must also be
+segmented.
+
+5. REFUTED — long-range recall failure is an absolute capability limit
+
+Design: six distinct facts and nine prompt arrangements (N=6 each), all in chat mode. Prompt text
+was inspected directly to verify whether each fact survived. Facts were tested after twelve short
+turns, after ten long turns, repeated in the acknowledgement, with a first-letter cue, near the
+query, alone, and in the current turn.
+
+  cap 8, early fact absent        0/6 = 0.0%  (fact present 0/6)
+  cap 16, early single mention   3/6 = 50.0% (fact present 6/6; ~279 tokens after fact)
+  cap 16, early repeated         3/6 = 50.0%
+  cap 16, initial-letter cue     3/6 = 50.0%
+  cap 16, long fillers           2/6 = 33.3% (fact present 6/6; ~455 tokens after fact)
+  cap 16, recent fact            3/6 = 50.0%
+  fact-only history              5/6 = 83.3%
+  direct current-turn fact       2/6 = 33.3%
+  structured “memory record”     0/6 = 0.0%
+
+Recall therefore did improve above zero with the fact demonstrably in the prompt, including at
+long token distance. The stronger conclusion “capability limit” does not survive.
+
+Confound/alternative explanation: recall is highly prompt-, fact-, and response-shape-dependent.
+Even direct current-turn copying was only 2/6, while a structured memory instruction was 0/6, so
+failures cannot be cleanly attributed to long-range memory alone.
+
+What the earlier analysis missed or over-claimed
+
+* History dropping works, but the proposed conversational-register mechanism is too narrow.
+* Lowercasing restores lowercase behavior, but the practical gain was modest and the threshold can
+  catch legitimate terse acronyms/proper names.
+* Opening-verb counts did not predict accuracy once facts and context were controlled.
+* Current source counts cannot reconstruct the evaluated checkpoint’s actual training exposure.
+* Verdict rates are dominated by retrieval mode and whether a verdict is an appropriate answer.
+* Recall is graded and prompt-sensitive, not a binary zero-capability result.

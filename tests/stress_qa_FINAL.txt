@@ -1,0 +1,57 @@
+5 samples per prompt, mode=auto
+
+==================================================================================================
+CONSISTENCY - the same fact asked five ways (disagreement means strings, not facts)
+==================================================================================================
+  ok   [rag] What is the capital of France?                 Paris
+  ok   [rag] France's capital is what?                      Paris
+  MISS [rag] Name the capital city of France.               Located in the city of France
+  ok   [rag] Which city is France's capital?                Paris
+  ok   [rag] france capital                                 Paris since its liberation in 1944
+    -> capital of France: 4/5 correct, 3 distinct answers
+
+  ok   [rag] Who invented the telephone?                    Alexander Graham Bell
+  ok   [rag] The telephone was invented by whom?            Alexander Graham Bell
+  ok   [rag] Name the inventor of the telephone.            Alexander Graham Bell
+  ok   [rag] Who is credited with inventing the telephone   Alexander Graham Bell
+  ok   [rag] telephone inventor                             Alexander Graham Bell
+    -> who invented the telephone: 5/5 correct, 1 distinct answers
+
+==================================================================================================
+NEGATION - can it handle 'not'?
+==================================================================================================
+  0/5  Which of these is not a mammal: dog, cat, salmon?          Brown Bear
+  0/5  Which of these is not a colour: red, blue, hammer?         Syracuse University
+  0/5  Name something that is not a fruit: apple, banana, carro   Yes
+  4/5  Is a whale not a fish?                                     No
+    -> mean 20%
+
+==================================================================================================
+FALSE PREMISE - can it decline a question built on a lie?
+==================================================================================================
+  0/5  When did Einstein invent the telephone?                    1876
+  0/5  Why is the sky green?                                      emits diatomic carbon
+  0/5  Who was the first person to walk on the sun?               Fred E.
+    -> mean 0%
+
+==================================================================================================
+COMPARISON - two facts plus a relation
+==================================================================================================
+  4/5  Is the sun bigger than the moon?                           No
+  0/5  Which is heavier, an elephant or a mouse?                  Males
+  3/5  Is water wetter than sand?                                 No
+    -> mean 47%
+
+==================================================================================================
+FORMAT CONSTRAINTS - is an instruction about the OUTPUT followed?
+==================================================================================================
+  5/5  [one_word    ] What is the capital of France? Answer in exa   
+  0/5  [number      ] How many legs does a spider have? Answer wit   The number of legs the spider has is: 30
+The total length of a l
+  2/5  [three_items ] List three colours.                            Red, green
+  5/5  [one_sentence] Write one sentence about the ocean.            
+    -> mean 60%
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 103/103 [00:00<00:00, 5266.34it/s]

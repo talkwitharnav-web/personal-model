@@ -1,0 +1,10 @@
+[2026-08-20 00:04:55] waiting for the Wikipedia clean to finish before rebuilding the index
+[2026-08-20 00:37:00] clean finished - wikipedia_clean.txt is 17.80 GB
+[2026-08-20 00:37:00] starting the index rebuild into rag/wikipedia_clean.* (the live index keeps serving)
+[2026-08-20 00:37:00] build started, PID 6028 - progress in C:\Users\arnav\Downloads\AI-TRAINING\logs\index_rebuild.log
+[2026-08-20 08:43:18] index build exited with code 0
+[2026-08-20 08:43:18] NEXT: compare old against new before switching. The new index is NOT live yet.
+[2026-08-20 08:43:18]   1. point orchestrator/config.py INDEX_PATH/PASSAGES_PATH/STATE_PATH at the
+[2026-08-20 08:43:18]      *_clean files, or rename them over the originals (keep a backup)
+[2026-08-20 08:43:18]   2. python -m tools.rag_accuracy_measure --tag NEW
+[2026-08-20 08:43:18]      and compare with the 61.3% mean hit rate the current index scores

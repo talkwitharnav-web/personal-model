@@ -1,0 +1,560 @@
+initialised from checkpoints\pretrain_v2_best.pt (pretrain step 130,000, validation 2.7667)
+=== v2 FINE-TUNE ===
+device cuda | train 182,433 rows | validation 18,826 rows
+2.0 epochs x 22,804 = 45,608 steps | peak lr 0.0001 | warmup 912
+patience 12 evals (6,000 steps) of a 22,804-step epoch
+checkpoints -> checkpoints
+step 0/45,608 | loss 2.8504 | lr 1.10e-07 | 6,136 tok/s | vram 3.23G | ~12.7h left
+step 0 | validation 3.1347 (best)
+step 100/45,608 | loss 2.7157 | lr 1.11e-05 | 13,919 tok/s | vram 3.97G | ~5.6h left
+step 200/45,608 | loss 2.1385 | lr 2.20e-05 | 14,586 tok/s | vram 3.97G | ~5.3h left
+step 300/45,608 | loss 2.2388 | lr 3.30e-05 | 14,832 tok/s | vram 3.97G | ~5.2h left
+step 400/45,608 | loss 1.8475 | lr 4.40e-05 | 14,958 tok/s | vram 3.97G | ~5.2h left
+step 500/45,608 | loss 2.4014 | lr 5.49e-05 | 15,036 tok/s | vram 3.97G | ~5.1h left
+step 500 | validation 2.1163 (best)
+step 600/45,608 | loss 2.1865 | lr 6.59e-05 | 14,816 tok/s | vram 3.97G | ~5.2h left
+step 700/45,608 | loss 2.5378 | lr 7.69e-05 | 14,890 tok/s | vram 3.97G | ~5.1h left
+step 800/45,608 | loss 1.7301 | lr 8.78e-05 | 14,944 tok/s | vram 3.97G | ~5.1h left
+step 900/45,608 | loss 2.5444 | lr 9.88e-05 | 14,988 tok/s | vram 3.97G | ~5.1h left
+step 1,000/45,608 | loss 2.6242 | lr 1.00e-04 | 15,025 tok/s | vram 3.97G | ~5.1h left
+step 1,000 | validation 1.9481 (best)
+step 1,100/45,608 | loss 2.0031 | lr 1.00e-04 | 14,878 tok/s | vram 3.97G | ~5.1h left
+step 1,200/45,608 | loss 2.5400 | lr 1.00e-04 | 14,910 tok/s | vram 3.97G | ~5.1h left
+step 1,300/45,608 | loss 2.0526 | lr 1.00e-04 | 14,940 tok/s | vram 3.97G | ~5.1h left
+step 1,400/45,608 | loss 3.2523 | lr 1.00e-04 | 14,965 tok/s | vram 3.97G | ~5.0h left
+step 1,500/45,608 | loss 2.1064 | lr 1.00e-04 | 14,988 tok/s | vram 3.97G | ~5.0h left
+step 1,500 | validation 1.8883 (best)
+step 1,600/45,608 | loss 1.8102 | lr 9.99e-05 | 14,911 tok/s | vram 3.97G | ~5.0h left
+step 1,700/45,608 | loss 1.0706 | lr 9.99e-05 | 14,934 tok/s | vram 3.97G | ~5.0h left
+step 1,800/45,608 | loss 1.3048 | lr 9.99e-05 | 14,953 tok/s | vram 3.97G | ~5.0h left
+step 1,900/45,608 | loss 2.2961 | lr 9.99e-05 | 14,970 tok/s | vram 3.97G | ~5.0h left
+step 2,000/45,608 | loss 2.2221 | lr 9.99e-05 | 14,986 tok/s | vram 3.97G | ~5.0h left
+step 2,000 | validation 1.8493 (best)
+step 2,100/45,608 | loss 1.4462 | lr 9.98e-05 | 14,909 tok/s | vram 3.97G | ~5.0h left
+step 2,200/45,608 | loss 1.3640 | lr 9.98e-05 | 14,927 tok/s | vram 3.97G | ~5.0h left
+step 2,300/45,608 | loss 2.2109 | lr 9.98e-05 | 14,944 tok/s | vram 3.97G | ~4.9h left
+step 2,400/45,608 | loss 1.2675 | lr 9.98e-05 | 14,959 tok/s | vram 3.97G | ~4.9h left
+step 2,500/45,608 | loss 1.1792 | lr 9.97e-05 | 14,973 tok/s | vram 3.97G | ~4.9h left
+step 2,500 | validation 1.8237 (best)
+step 2,600/45,608 | loss 2.0208 | lr 9.97e-05 | 14,925 tok/s | vram 3.97G | ~4.9h left
+step 2,700/45,608 | loss 1.4962 | lr 9.96e-05 | 14,939 tok/s | vram 3.97G | ~4.9h left
+step 2,800/45,608 | loss 1.3908 | lr 9.96e-05 | 14,951 tok/s | vram 3.97G | ~4.9h left
+step 2,900/45,608 | loss 1.7540 | lr 9.96e-05 | 14,962 tok/s | vram 3.97G | ~4.9h left
+step 3,000/45,608 | loss 1.9402 | lr 9.95e-05 | 14,973 tok/s | vram 3.97G | ~4.9h left
+step 3,000 | validation 1.8082 (best)
+step 3,100/45,608 | loss 1.5437 | lr 9.95e-05 | 14,921 tok/s | vram 3.97G | ~4.9h left
+step 3,200/45,608 | loss 2.3280 | lr 9.94e-05 | 14,932 tok/s | vram 3.97G | ~4.8h left
+step 3,300/45,608 | loss 2.3438 | lr 9.94e-05 | 14,943 tok/s | vram 3.97G | ~4.8h left
+step 3,400/45,608 | loss 1.8476 | lr 9.93e-05 | 14,953 tok/s | vram 3.97G | ~4.8h left
+step 3,500/45,608 | loss 1.2147 | lr 9.93e-05 | 14,963 tok/s | vram 3.97G | ~4.8h left
+step 3,500 | validation 1.7976 (best)
+step 3,600/45,608 | loss 2.0900 | lr 9.92e-05 | 14,929 tok/s | vram 3.97G | ~4.8h left
+step 3,700/45,608 | loss 1.3385 | lr 9.91e-05 | 14,939 tok/s | vram 3.97G | ~4.8h left
+step 3,800/45,608 | loss 2.5789 | lr 9.91e-05 | 14,948 tok/s | vram 3.97G | ~4.8h left
+step 3,900/45,608 | loss 1.5922 | lr 9.90e-05 | 14,957 tok/s | vram 3.97G | ~4.8h left
+step 4,000/45,608 | loss 1.7161 | lr 9.89e-05 | 14,966 tok/s | vram 3.97G | ~4.7h left
+step 4,000 | validation 1.7880 (best)
+step 4,100/45,608 | loss 1.4738 | lr 9.89e-05 | 14,926 tok/s | vram 3.97G | ~4.7h left
+step 4,200/45,608 | loss 1.1633 | lr 9.88e-05 | 14,934 tok/s | vram 3.97G | ~4.7h left
+step 4,300/45,608 | loss 2.3137 | lr 9.87e-05 | 14,943 tok/s | vram 3.97G | ~4.7h left
+step 4,400/45,608 | loss 2.5844 | lr 9.87e-05 | 14,951 tok/s | vram 3.97G | ~4.7h left
+step 4,500/45,608 | loss 1.8949 | lr 9.86e-05 | 14,959 tok/s | vram 3.97G | ~4.7h left
+step 4,500 | validation 1.7801 (best)
+step 4,600/45,608 | loss 2.5460 | lr 9.85e-05 | 14,932 tok/s | vram 3.97G | ~4.7h left
+step 4,700/45,608 | loss 0.9408 | lr 9.84e-05 | 14,941 tok/s | vram 3.97G | ~4.7h left
+step 4,800/45,608 | loss 1.2215 | lr 9.83e-05 | 14,948 tok/s | vram 3.97G | ~4.7h left
+step 4,900/45,608 | loss 2.1022 | lr 9.82e-05 | 14,956 tok/s | vram 3.97G | ~4.6h left
+step 5,000/45,608 | loss 2.0059 | lr 9.82e-05 | 14,962 tok/s | vram 3.97G | ~4.6h left
+step 5,000 | validation 1.7692 (best)
+step 5,100/45,608 | loss 2.7436 | lr 9.81e-05 | 14,931 tok/s | vram 3.97G | ~4.6h left
+step 5,200/45,608 | loss 1.3695 | lr 9.80e-05 | 14,938 tok/s | vram 3.97G | ~4.6h left
+step 5,300/45,608 | loss 1.7294 | lr 9.79e-05 | 14,946 tok/s | vram 3.97G | ~4.6h left
+step 5,400/45,608 | loss 1.9511 | lr 9.78e-05 | 14,953 tok/s | vram 3.97G | ~4.6h left
+step 5,500/45,608 | loss 2.0715 | lr 9.77e-05 | 14,959 tok/s | vram 3.97G | ~4.6h left
+step 5,500 | validation 1.7634 (best)
+step 5,600/45,608 | loss 1.5271 | lr 9.76e-05 | 14,937 tok/s | vram 3.97G | ~4.6h left
+step 5,700/45,608 | loss 1.5465 | lr 9.75e-05 | 14,944 tok/s | vram 3.97G | ~4.6h left
+step 5,800/45,608 | loss 1.5266 | lr 9.74e-05 | 14,951 tok/s | vram 3.97G | ~4.5h left
+step 5,900/45,608 | loss 2.3229 | lr 9.73e-05 | 14,957 tok/s | vram 3.97G | ~4.5h left
+step 6,000/45,608 | loss 1.5624 | lr 9.72e-05 | 14,964 tok/s | vram 3.97G | ~4.5h left
+step 6,000 | validation 1.7562 (best)
+step 6,100/45,608 | loss 2.0518 | lr 9.70e-05 | 14,937 tok/s | vram 3.97G | ~4.5h left
+step 6,200/45,608 | loss 1.7647 | lr 9.69e-05 | 14,943 tok/s | vram 3.97G | ~4.5h left
+step 6,300/45,608 | loss 1.4978 | lr 9.68e-05 | 14,949 tok/s | vram 3.97G | ~4.5h left
+step 6,400/45,608 | loss 1.7146 | lr 9.67e-05 | 14,954 tok/s | vram 3.97G | ~4.5h left
+step 6,500/45,608 | loss 1.9470 | lr 9.66e-05 | 14,960 tok/s | vram 3.97G | ~4.5h left
+step 6,500 | validation 1.7496 (best)
+step 6,600/45,608 | loss 1.6697 | lr 9.65e-05 | 14,942 tok/s | vram 3.97G | ~4.5h left
+step 6,700/45,608 | loss 1.9940 | lr 9.63e-05 | 14,948 tok/s | vram 3.97G | ~4.4h left
+step 6,800/45,608 | loss 1.9468 | lr 9.62e-05 | 14,953 tok/s | vram 3.97G | ~4.4h left
+step 6,900/45,608 | loss 1.6853 | lr 9.61e-05 | 14,958 tok/s | vram 3.97G | ~4.4h left
+step 7,000/45,608 | loss 1.7594 | lr 9.59e-05 | 14,963 tok/s | vram 3.97G | ~4.4h left
+step 7,000 | validation 1.7457 (best)
+step 7,100/45,608 | loss 1.2033 | lr 9.58e-05 | 14,939 tok/s | vram 3.97G | ~4.4h left
+step 7,200/45,608 | loss 1.4240 | lr 9.57e-05 | 14,944 tok/s | vram 3.97G | ~4.4h left
+step 7,300/45,608 | loss 1.2448 | lr 9.55e-05 | 14,950 tok/s | vram 3.97G | ~4.4h left
+step 7,400/45,608 | loss 1.3489 | lr 9.54e-05 | 14,955 tok/s | vram 3.97G | ~4.4h left
+step 7,500/45,608 | loss 1.3191 | lr 9.53e-05 | 14,960 tok/s | vram 3.97G | ~4.3h left
+step 7,500 | validation 1.7408 (best)
+step 7,600/45,608 | loss 1.8040 | lr 9.51e-05 | 14,944 tok/s | vram 3.97G | ~4.3h left
+step 7,700/45,608 | loss 2.0513 | lr 9.50e-05 | 14,949 tok/s | vram 3.97G | ~4.3h left
+step 7,800/45,608 | loss 1.7982 | lr 9.48e-05 | 14,953 tok/s | vram 3.97G | ~4.3h left
+step 7,900/45,608 | loss 1.2813 | lr 9.47e-05 | 14,958 tok/s | vram 3.97G | ~4.3h left
+step 8,000/45,608 | loss 2.1050 | lr 9.45e-05 | 14,962 tok/s | vram 3.97G | ~4.3h left
+step 8,000 | validation 1.7381 (best)
+step 8,100/45,608 | loss 2.3068 | lr 9.44e-05 | 14,942 tok/s | vram 3.97G | ~4.3h left
+step 8,200/45,608 | loss 1.3618 | lr 9.42e-05 | 14,946 tok/s | vram 3.97G | ~4.3h left
+step 8,300/45,608 | loss 1.5578 | lr 9.41e-05 | 14,951 tok/s | vram 3.97G | ~4.3h left
+step 8,400/45,608 | loss 1.1875 | lr 9.39e-05 | 14,955 tok/s | vram 3.97G | ~4.2h left
+step 8,500/45,608 | loss 1.7354 | lr 9.37e-05 | 14,960 tok/s | vram 3.97G | ~4.2h left
+step 8,500 | validation 1.7350 (best)
+step 8,600/45,608 | loss 2.7194 | lr 9.36e-05 | 14,946 tok/s | vram 3.97G | ~4.2h left
+step 8,700/45,608 | loss 1.5095 | lr 9.34e-05 | 14,951 tok/s | vram 3.97G | ~4.2h left
+step 8,800/45,608 | loss 1.6045 | lr 9.33e-05 | 14,955 tok/s | vram 3.97G | ~4.2h left
+step 8,900/45,608 | loss 1.1488 | lr 9.31e-05 | 14,959 tok/s | vram 3.97G | ~4.2h left
+step 9,000/45,608 | loss 1.8755 | lr 9.29e-05 | 14,963 tok/s | vram 3.97G | ~4.2h left
+step 9,000 | validation 1.7296 (best)
+step 9,100/45,608 | loss 1.2486 | lr 9.28e-05 | 14,946 tok/s | vram 3.97G | ~4.2h left
+step 9,200/45,608 | loss 0.8288 | lr 9.26e-05 | 14,951 tok/s | vram 3.97G | ~4.2h left
+step 9,300/45,608 | loss 1.8498 | lr 9.24e-05 | 14,955 tok/s | vram 3.97G | ~4.1h left
+step 9,400/45,608 | loss 2.0853 | lr 9.22e-05 | 14,959 tok/s | vram 3.97G | ~4.1h left
+step 9,500/45,608 | loss 1.3915 | lr 9.20e-05 | 14,963 tok/s | vram 3.97G | ~4.1h left
+step 9,500 | validation 1.7268 (best)
+step 9,600/45,608 | loss 2.0397 | lr 9.19e-05 | 14,950 tok/s | vram 3.97G | ~4.1h left
+step 9,700/45,608 | loss 2.3219 | lr 9.17e-05 | 14,954 tok/s | vram 3.97G | ~4.1h left
+step 9,800/45,608 | loss 2.1486 | lr 9.15e-05 | 14,958 tok/s | vram 3.97G | ~4.1h left
+step 9,900/45,608 | loss 1.4929 | lr 9.13e-05 | 14,962 tok/s | vram 3.97G | ~4.1h left
+step 10,000/45,608 | loss 1.6381 | lr 9.11e-05 | 14,965 tok/s | vram 3.97G | ~4.1h left
+step 10,000 | validation 1.7223 (best)
+step 10,100/45,608 | loss 1.7921 | lr 9.09e-05 | 14,949 tok/s | vram 3.97G | ~4.1h left
+step 10,200/45,608 | loss 2.0913 | lr 9.07e-05 | 14,952 tok/s | vram 3.97G | ~4.0h left
+step 10,300/45,608 | loss 2.2254 | lr 9.06e-05 | 14,956 tok/s | vram 3.97G | ~4.0h left
+step 10,400/45,608 | loss 2.5759 | lr 9.04e-05 | 14,960 tok/s | vram 3.97G | ~4.0h left
+step 10,500/45,608 | loss 2.0279 | lr 9.02e-05 | 14,963 tok/s | vram 3.97G | ~4.0h left
+step 10,500 | validation 1.7192 (best)
+step 10,600/45,608 | loss 1.7816 | lr 9.00e-05 | 14,952 tok/s | vram 3.97G | ~4.0h left
+step 10,700/45,608 | loss 1.6286 | lr 8.98e-05 | 14,956 tok/s | vram 3.97G | ~4.0h left
+step 10,800/45,608 | loss 1.5925 | lr 8.96e-05 | 14,959 tok/s | vram 3.97G | ~4.0h left
+step 10,900/45,608 | loss 1.5533 | lr 8.94e-05 | 14,963 tok/s | vram 3.97G | ~4.0h left
+step 11,000/45,608 | loss 2.3766 | lr 8.92e-05 | 14,966 tok/s | vram 3.97G | ~3.9h left
+step 11,000 | validation 1.7140 (best)
+step 11,100/45,608 | loss 2.3017 | lr 8.89e-05 | 14,952 tok/s | vram 3.97G | ~3.9h left
+step 11,200/45,608 | loss 1.6754 | lr 8.87e-05 | 14,955 tok/s | vram 3.97G | ~3.9h left
+step 11,300/45,608 | loss 2.3789 | lr 8.85e-05 | 14,959 tok/s | vram 3.97G | ~3.9h left
+step 11,400/45,608 | loss 2.2942 | lr 8.83e-05 | 14,962 tok/s | vram 3.97G | ~3.9h left
+step 11,500/45,608 | loss 2.1181 | lr 8.81e-05 | 14,965 tok/s | vram 3.97G | ~3.9h left
+step 11,500 | validation 1.7118 (best)
+step 11,600/45,608 | loss 2.0559 | lr 8.79e-05 | 14,955 tok/s | vram 3.97G | ~3.9h left
+step 11,700/45,608 | loss 0.7230 | lr 8.77e-05 | 14,958 tok/s | vram 3.97G | ~3.9h left
+step 11,800/45,608 | loss 1.7624 | lr 8.75e-05 | 14,961 tok/s | vram 3.97G | ~3.9h left
+step 11,900/45,608 | loss 2.2305 | lr 8.72e-05 | 14,965 tok/s | vram 3.97G | ~3.8h left
+step 12,000/45,608 | loss 2.1829 | lr 8.70e-05 | 14,968 tok/s | vram 3.97G | ~3.8h left
+step 12,000 | validation 1.7091 (best)
+step 12,100/45,608 | loss 1.9668 | lr 8.68e-05 | 14,954 tok/s | vram 3.97G | ~3.8h left
+step 12,200/45,608 | loss 1.7155 | lr 8.66e-05 | 14,957 tok/s | vram 3.97G | ~3.8h left
+step 12,300/45,608 | loss 2.0269 | lr 8.63e-05 | 14,961 tok/s | vram 3.97G | ~3.8h left
+step 12,400/45,608 | loss 1.7919 | lr 8.61e-05 | 14,964 tok/s | vram 3.97G | ~3.8h left
+step 12,500/45,608 | loss 0.7553 | lr 8.59e-05 | 14,966 tok/s | vram 3.97G | ~3.8h left
+step 12,500 | validation 1.7130 | no improvement 1/12
+step 12,600/45,608 | loss 1.6968 | lr 8.56e-05 | 14,960 tok/s | vram 3.97G | ~3.8h left
+step 12,700/45,608 | loss 1.5754 | lr 8.54e-05 | 14,963 tok/s | vram 3.97G | ~3.8h left
+step 12,800/45,608 | loss 2.4834 | lr 8.52e-05 | 14,966 tok/s | vram 3.97G | ~3.7h left
+step 12,900/45,608 | loss 1.7026 | lr 8.49e-05 | 14,968 tok/s | vram 3.97G | ~3.7h left
+step 13,000/45,608 | loss 2.2308 | lr 8.47e-05 | 14,971 tok/s | vram 3.97G | ~3.7h left
+step 13,000 | validation 1.7087 (best)
+step 13,100/45,608 | loss 1.5771 | lr 8.45e-05 | 14,959 tok/s | vram 3.97G | ~3.7h left
+step 13,200/45,608 | loss 1.4016 | lr 8.42e-05 | 14,962 tok/s | vram 3.97G | ~3.7h left
+step 13,300/45,608 | loss 1.1855 | lr 8.40e-05 | 14,965 tok/s | vram 3.97G | ~3.7h left
+step 13,400/45,608 | loss 1.3137 | lr 8.37e-05 | 14,968 tok/s | vram 3.97G | ~3.7h left
+step 13,500/45,608 | loss 2.4511 | lr 8.35e-05 | 14,971 tok/s | vram 3.97G | ~3.7h left
+step 13,500 | validation 1.7091 | no improvement 1/12
+step 13,600/45,608 | loss 2.3254 | lr 8.33e-05 | 14,965 tok/s | vram 3.97G | ~3.7h left
+step 13,700/45,608 | loss 1.4606 | lr 8.30e-05 | 14,967 tok/s | vram 3.97G | ~3.6h left
+step 13,800/45,608 | loss 1.4981 | lr 8.28e-05 | 14,970 tok/s | vram 3.97G | ~3.6h left
+step 13,900/45,608 | loss 1.2579 | lr 8.25e-05 | 14,973 tok/s | vram 3.97G | ~3.6h left
+step 14,000/45,608 | loss 2.1226 | lr 8.23e-05 | 14,976 tok/s | vram 3.97G | ~3.6h left
+step 14,000 | validation 1.7041 (best)
+step 14,100/45,608 | loss 2.0418 | lr 8.20e-05 | 14,965 tok/s | vram 3.97G | ~3.6h left
+step 14,200/45,608 | loss 1.0691 | lr 8.18e-05 | 14,968 tok/s | vram 3.97G | ~3.6h left
+step 14,300/45,608 | loss 1.5636 | lr 8.15e-05 | 14,970 tok/s | vram 3.97G | ~3.6h left
+step 14,400/45,608 | loss 1.6505 | lr 8.12e-05 | 14,973 tok/s | vram 3.97G | ~3.6h left
+step 14,500/45,608 | loss 1.3727 | lr 8.10e-05 | 14,976 tok/s | vram 3.97G | ~3.5h left
+step 14,500 | validation 1.6999 (best)
+step 14,600/45,608 | loss 1.7533 | lr 8.07e-05 | 14,967 tok/s | vram 3.97G | ~3.5h left
+step 14,700/45,608 | loss 1.9435 | lr 8.05e-05 | 14,970 tok/s | vram 3.97G | ~3.5h left
+step 14,800/45,608 | loss 1.2493 | lr 8.02e-05 | 14,972 tok/s | vram 3.97G | ~3.5h left
+step 14,900/45,608 | loss 1.2060 | lr 7.99e-05 | 14,975 tok/s | vram 3.97G | ~3.5h left
+step 15,000/45,608 | loss 0.9155 | lr 7.97e-05 | 14,977 tok/s | vram 3.97G | ~3.5h left
+step 15,000 | validation 1.7014 | no improvement 1/12
+step 15,100/45,608 | loss 1.0476 | lr 7.94e-05 | 14,970 tok/s | vram 3.97G | ~3.5h left
+step 15,200/45,608 | loss 1.2962 | lr 7.92e-05 | 14,972 tok/s | vram 3.97G | ~3.5h left
+step 15,300/45,608 | loss 2.1457 | lr 7.89e-05 | 14,974 tok/s | vram 3.97G | ~3.5h left
+step 15,400/45,608 | loss 2.1145 | lr 7.86e-05 | 14,977 tok/s | vram 3.97G | ~3.4h left
+step 15,500/45,608 | loss 1.1646 | lr 7.83e-05 | 14,979 tok/s | vram 3.97G | ~3.4h left
+step 15,500 | validation 1.6974 (best)
+step 15,600/45,608 | loss 1.8105 | lr 7.81e-05 | 14,972 tok/s | vram 3.97G | ~3.4h left
+step 15,700/45,608 | loss 1.7251 | lr 7.78e-05 | 14,974 tok/s | vram 3.97G | ~3.4h left
+step 15,800/45,608 | loss 1.8691 | lr 7.75e-05 | 14,977 tok/s | vram 3.97G | ~3.4h left
+step 15,900/45,608 | loss 2.0053 | lr 7.73e-05 | 14,980 tok/s | vram 3.97G | ~3.4h left
+step 16,000/45,608 | loss 2.4909 | lr 7.70e-05 | 14,982 tok/s | vram 3.97G | ~3.4h left
+step 16,000 | validation 1.6980 | no improvement 1/12
+step 16,100/45,608 | loss 1.8974 | lr 7.67e-05 | 14,975 tok/s | vram 3.97G | ~3.4h left
+step 16,200/45,608 | loss 1.5875 | lr 7.64e-05 | 14,977 tok/s | vram 3.97G | ~3.4h left
+step 16,300/45,608 | loss 2.1502 | lr 7.61e-05 | 14,980 tok/s | vram 3.97G | ~3.3h left
+step 16,400/45,608 | loss 1.0294 | lr 7.59e-05 | 14,982 tok/s | vram 3.97G | ~3.3h left
+step 16,500/45,608 | loss 1.5641 | lr 7.56e-05 | 14,985 tok/s | vram 3.97G | ~3.3h left
+step 16,500 | validation 1.6940 (best)
+step 16,600/45,608 | loss 2.4187 | lr 7.53e-05 | 14,977 tok/s | vram 3.97G | ~3.3h left
+step 16,700/45,608 | loss 2.2119 | lr 7.50e-05 | 14,980 tok/s | vram 3.97G | ~3.3h left
+step 16,800/45,608 | loss 1.7020 | lr 7.47e-05 | 14,982 tok/s | vram 3.97G | ~3.3h left
+step 16,900/45,608 | loss 1.6522 | lr 7.45e-05 | 14,984 tok/s | vram 3.97G | ~3.3h left
+step 17,000/45,608 | loss 1.8442 | lr 7.42e-05 | 14,987 tok/s | vram 3.97G | ~3.3h left
+step 17,000 | validation 1.6931 (best)
+step 17,100/45,608 | loss 2.0600 | lr 7.39e-05 | 14,977 tok/s | vram 3.97G | ~3.2h left
+step 17,200/45,608 | loss 2.0812 | lr 7.36e-05 | 14,980 tok/s | vram 3.97G | ~3.2h left
+step 17,300/45,608 | loss 1.1229 | lr 7.33e-05 | 14,982 tok/s | vram 3.97G | ~3.2h left
+step 17,400/45,608 | loss 1.8714 | lr 7.30e-05 | 14,984 tok/s | vram 3.97G | ~3.2h left
+step 17,500/45,608 | loss 1.9223 | lr 7.27e-05 | 14,986 tok/s | vram 3.97G | ~3.2h left
+step 17,500 | validation 1.6899 (best)
+step 17,600/45,608 | loss 2.3287 | lr 7.24e-05 | 14,979 tok/s | vram 3.97G | ~3.2h left
+step 17,700/45,608 | loss 2.2926 | lr 7.21e-05 | 14,982 tok/s | vram 3.97G | ~3.2h left
+step 17,800/45,608 | loss 1.2886 | lr 7.18e-05 | 14,984 tok/s | vram 3.97G | ~3.2h left
+step 17,900/45,608 | loss 1.9216 | lr 7.16e-05 | 14,986 tok/s | vram 3.97G | ~3.2h left
+step 18,000/45,608 | loss 1.9830 | lr 7.13e-05 | 14,988 tok/s | vram 3.97G | ~3.1h left
+step 18,000 | validation 1.6882 (best)
+step 18,100/45,608 | loss 1.6228 | lr 7.10e-05 | 14,980 tok/s | vram 3.97G | ~3.1h left
+step 18,200/45,608 | loss 2.3876 | lr 7.07e-05 | 14,982 tok/s | vram 3.97G | ~3.1h left
+step 18,300/45,608 | loss 2.0258 | lr 7.04e-05 | 14,984 tok/s | vram 3.97G | ~3.1h left
+step 18,400/45,608 | loss 0.8241 | lr 7.01e-05 | 14,986 tok/s | vram 3.97G | ~3.1h left
+step 18,500/45,608 | loss 1.5772 | lr 6.98e-05 | 14,989 tok/s | vram 3.97G | ~3.1h left
+step 18,500 | validation 1.6881 (best)
+step 18,600/45,608 | loss 1.1831 | lr 6.95e-05 | 14,982 tok/s | vram 3.97G | ~3.1h left
+step 18,700/45,608 | loss 1.6400 | lr 6.92e-05 | 14,984 tok/s | vram 3.97G | ~3.1h left
+step 18,800/45,608 | loss 2.3025 | lr 6.89e-05 | 14,987 tok/s | vram 3.97G | ~3.1h left
+step 18,900/45,608 | loss 1.6011 | lr 6.86e-05 | 14,989 tok/s | vram 3.97G | ~3.0h left
+step 19,000/45,608 | loss 0.5791 | lr 6.83e-05 | 14,991 tok/s | vram 3.97G | ~3.0h left
+step 19,000 | validation 1.6873 (best)
+step 19,100/45,608 | loss 2.3185 | lr 6.80e-05 | 14,983 tok/s | vram 3.97G | ~3.0h left
+step 19,200/45,608 | loss 0.6372 | lr 6.77e-05 | 14,985 tok/s | vram 3.97G | ~3.0h left
+step 19,300/45,608 | loss 1.4621 | lr 6.74e-05 | 14,987 tok/s | vram 3.97G | ~3.0h left
+step 19,400/45,608 | loss 1.4181 | lr 6.71e-05 | 14,989 tok/s | vram 3.97G | ~3.0h left
+step 19,500/45,608 | loss 1.9824 | lr 6.68e-05 | 14,991 tok/s | vram 3.97G | ~3.0h left
+step 19,500 | validation 1.6810 (best)
+step 19,600/45,608 | loss 1.2613 | lr 6.64e-05 | 14,985 tok/s | vram 3.97G | ~3.0h left
+step 19,700/45,608 | loss 2.3833 | lr 6.61e-05 | 14,988 tok/s | vram 3.97G | ~3.0h left
+step 19,800/45,608 | loss 1.2650 | lr 6.58e-05 | 14,990 tok/s | vram 3.97G | ~2.9h left
+step 19,900/45,608 | loss 0.8238 | lr 6.55e-05 | 14,992 tok/s | vram 3.97G | ~2.9h left
+step 20,000/45,608 | loss 1.9876 | lr 6.52e-05 | 14,994 tok/s | vram 3.97G | ~2.9h left
+step 20,000 | validation 1.6819 | no improvement 1/12
+step 20,100/45,608 | loss 1.6178 | lr 6.49e-05 | 14,988 tok/s | vram 3.97G | ~2.9h left
+step 20,200/45,608 | loss 1.8340 | lr 6.46e-05 | 14,990 tok/s | vram 3.97G | ~2.9h left
+step 20,300/45,608 | loss 2.0415 | lr 6.43e-05 | 14,992 tok/s | vram 3.97G | ~2.9h left
+step 20,400/45,608 | loss 1.3542 | lr 6.40e-05 | 14,994 tok/s | vram 3.97G | ~2.9h left
+step 20,500/45,608 | loss 2.1245 | lr 6.37e-05 | 14,996 tok/s | vram 3.97G | ~2.9h left
+step 20,500 | validation 1.6862 | no improvement 2/12
+step 20,600/45,608 | loss 1.2089 | lr 6.34e-05 | 14,992 tok/s | vram 3.97G | ~2.8h left
+step 20,700/45,608 | loss 2.6940 | lr 6.31e-05 | 14,994 tok/s | vram 3.97G | ~2.8h left
+step 20,800/45,608 | loss 1.2782 | lr 6.27e-05 | 14,996 tok/s | vram 3.97G | ~2.8h left
+step 20,900/45,608 | loss 2.2667 | lr 6.24e-05 | 14,998 tok/s | vram 3.97G | ~2.8h left
+step 21,000/45,608 | loss 0.7284 | lr 6.21e-05 | 15,000 tok/s | vram 3.97G | ~2.8h left
+step 21,000 | validation 1.6813 | no improvement 3/12
+step 21,100/45,608 | loss 1.8820 | lr 6.18e-05 | 14,995 tok/s | vram 3.97G | ~2.8h left
+step 21,200/45,608 | loss 1.6727 | lr 6.15e-05 | 14,997 tok/s | vram 3.97G | ~2.8h left
+step 21,300/45,608 | loss 2.0839 | lr 6.12e-05 | 14,999 tok/s | vram 3.97G | ~2.8h left
+step 21,400/45,608 | loss 2.1696 | lr 6.09e-05 | 15,000 tok/s | vram 3.97G | ~2.8h left
+step 21,500/45,608 | loss 0.9134 | lr 6.06e-05 | 15,002 tok/s | vram 3.97G | ~2.7h left
+step 21,500 | validation 1.6797 (best)
+step 21,600/45,608 | loss 2.2780 | lr 6.02e-05 | 14,997 tok/s | vram 3.97G | ~2.7h left
+step 21,700/45,608 | loss 1.1983 | lr 5.99e-05 | 14,999 tok/s | vram 3.97G | ~2.7h left
+step 21,800/45,608 | loss 1.8186 | lr 5.96e-05 | 15,001 tok/s | vram 3.97G | ~2.7h left
+step 21,900/45,608 | loss 1.4277 | lr 5.93e-05 | 15,003 tok/s | vram 3.97G | ~2.7h left
+step 22,000/45,608 | loss 1.7987 | lr 5.90e-05 | 15,004 tok/s | vram 3.97G | ~2.7h left
+step 22,000 | validation 1.6785 (best)
+step 22,100/45,608 | loss 1.6405 | lr 5.87e-05 | 14,997 tok/s | vram 3.97G | ~2.7h left
+step 22,200/45,608 | loss 1.4684 | lr 5.83e-05 | 14,999 tok/s | vram 3.97G | ~2.7h left
+step 22,300/45,608 | loss 1.0729 | lr 5.80e-05 | 15,001 tok/s | vram 3.97G | ~2.7h left
+step 22,400/45,608 | loss 1.3143 | lr 5.77e-05 | 15,003 tok/s | vram 3.97G | ~2.6h left
+step 22,500/45,608 | loss 1.6773 | lr 5.74e-05 | 15,005 tok/s | vram 3.97G | ~2.6h left
+step 22,500 | validation 1.6780 (best)
+step 22,600/45,608 | loss 1.4714 | lr 5.71e-05 | 14,999 tok/s | vram 3.97G | ~2.6h left
+step 22,700/45,608 | loss 1.7300 | lr 5.68e-05 | 15,001 tok/s | vram 3.97G | ~2.6h left
+step 22,800/45,608 | loss 1.9240 | lr 5.65e-05 | 15,003 tok/s | vram 3.97G | ~2.6h left
+step 22,900/45,608 | loss 2.0782 | lr 5.61e-05 | 15,005 tok/s | vram 3.97G | ~2.6h left
+step 23,000/45,608 | loss 1.7252 | lr 5.58e-05 | 15,006 tok/s | vram 3.97G | ~2.6h left
+step 23,000 | validation 1.6737 (best)
+step 23,100/45,608 | loss 0.2906 | lr 5.55e-05 | 14,999 tok/s | vram 3.97G | ~2.6h left
+step 23,200/45,608 | loss 1.9020 | lr 5.52e-05 | 15,001 tok/s | vram 3.97G | ~2.5h left
+step 23,300/45,608 | loss 1.0245 | lr 5.49e-05 | 15,003 tok/s | vram 3.97G | ~2.5h left
+step 23,400/45,608 | loss 1.1191 | lr 5.46e-05 | 15,005 tok/s | vram 3.97G | ~2.5h left
+step 23,500/45,608 | loss 2.4212 | lr 5.42e-05 | 15,006 tok/s | vram 3.97G | ~2.5h left
+step 23,500 | validation 1.6754 | no improvement 1/12
+step 23,600/45,608 | loss 2.4741 | lr 5.39e-05 | 15,003 tok/s | vram 3.97G | ~2.5h left
+step 23,700/45,608 | loss 1.6341 | lr 5.36e-05 | 15,005 tok/s | vram 3.97G | ~2.5h left
+step 23,800/45,608 | loss 2.0704 | lr 5.33e-05 | 15,006 tok/s | vram 3.97G | ~2.5h left
+step 23,900/45,608 | loss 2.0512 | lr 5.30e-05 | 15,008 tok/s | vram 3.97G | ~2.5h left
+step 24,000/45,608 | loss 0.6150 | lr 5.27e-05 | 15,010 tok/s | vram 3.97G | ~2.5h left
+step 24,000 | validation 1.6740 | no improvement 2/12
+step 24,100/45,608 | loss 1.4654 | lr 5.23e-05 | 15,005 tok/s | vram 3.97G | ~2.4h left
+step 24,200/45,608 | loss 1.0018 | lr 5.20e-05 | 15,006 tok/s | vram 3.97G | ~2.4h left
+step 24,300/45,608 | loss 1.3011 | lr 5.17e-05 | 15,008 tok/s | vram 3.97G | ~2.4h left
+step 24,400/45,608 | loss 1.4645 | lr 5.14e-05 | 15,010 tok/s | vram 3.97G | ~2.4h left
+step 24,500/45,608 | loss 1.7260 | lr 5.11e-05 | 15,011 tok/s | vram 3.97G | ~2.4h left
+step 24,500 | validation 1.6725 (best)
+step 24,600/45,608 | loss 1.9143 | lr 5.08e-05 | 15,006 tok/s | vram 3.97G | ~2.4h left
+step 24,700/45,608 | loss 1.6505 | lr 5.05e-05 | 15,008 tok/s | vram 3.97G | ~2.4h left
+step 24,800/45,608 | loss 2.0570 | lr 5.01e-05 | 15,009 tok/s | vram 3.97G | ~2.4h left
+step 24,900/45,608 | loss 1.8878 | lr 4.98e-05 | 15,011 tok/s | vram 3.97G | ~2.4h left
+step 25,000/45,608 | loss 1.2903 | lr 4.95e-05 | 15,012 tok/s | vram 3.97G | ~2.3h left
+step 25,000 | validation 1.6732 | no improvement 1/12
+step 25,100/45,608 | loss 0.9871 | lr 4.92e-05 | 15,008 tok/s | vram 3.97G | ~2.3h left
+step 25,200/45,608 | loss 1.5988 | lr 4.89e-05 | 15,009 tok/s | vram 3.97G | ~2.3h left
+step 25,300/45,608 | loss 2.5156 | lr 4.86e-05 | 15,011 tok/s | vram 3.97G | ~2.3h left
+step 25,400/45,608 | loss 2.3390 | lr 4.83e-05 | 15,012 tok/s | vram 3.97G | ~2.3h left
+step 25,500/45,608 | loss 1.7780 | lr 4.79e-05 | 15,014 tok/s | vram 3.97G | ~2.3h left
+step 25,500 | validation 1.6719 (best)
+step 25,600/45,608 | loss 1.7175 | lr 4.76e-05 | 15,009 tok/s | vram 3.97G | ~2.3h left
+step 25,700/45,608 | loss 1.8565 | lr 4.73e-05 | 15,011 tok/s | vram 3.97G | ~2.3h left
+step 25,800/45,608 | loss 1.9201 | lr 4.70e-05 | 15,012 tok/s | vram 3.97G | ~2.3h left
+step 25,900/45,608 | loss 1.6585 | lr 4.67e-05 | 15,014 tok/s | vram 3.97G | ~2.2h left
+step 26,000/45,608 | loss 1.4821 | lr 4.64e-05 | 15,015 tok/s | vram 3.97G | ~2.2h left
+step 26,000 | validation 1.6711 (best)
+step 26,100/45,608 | loss 1.1030 | lr 4.61e-05 | 15,009 tok/s | vram 3.97G | ~2.2h left
+step 26,200/45,608 | loss 2.1055 | lr 4.58e-05 | 15,011 tok/s | vram 3.97G | ~2.2h left
+step 26,300/45,608 | loss 1.8245 | lr 4.55e-05 | 15,012 tok/s | vram 3.97G | ~2.2h left
+step 26,400/45,608 | loss 2.4725 | lr 4.51e-05 | 15,013 tok/s | vram 3.97G | ~2.2h left
+step 26,500/45,608 | loss 1.7415 | lr 4.48e-05 | 15,015 tok/s | vram 3.97G | ~2.2h left
+step 26,500 | validation 1.6704 (best)
+step 26,600/45,608 | loss 2.1052 | lr 4.45e-05 | 15,010 tok/s | vram 3.97G | ~2.2h left
+step 26,700/45,608 | loss 2.3595 | lr 4.42e-05 | 15,012 tok/s | vram 3.97G | ~2.1h left
+step 26,800/45,608 | loss 2.6751 | lr 4.39e-05 | 15,013 tok/s | vram 3.97G | ~2.1h left
+step 26,900/45,608 | loss 2.9012 | lr 4.36e-05 | 15,015 tok/s | vram 3.97G | ~2.1h left
+step 27,000/45,608 | loss 2.0313 | lr 4.33e-05 | 15,016 tok/s | vram 3.97G | ~2.1h left
+step 27,000 | validation 1.6697 (best)
+step 27,100/45,608 | loss 2.3744 | lr 4.30e-05 | 15,011 tok/s | vram 3.97G | ~2.1h left
+step 27,200/45,608 | loss 1.9453 | lr 4.27e-05 | 15,012 tok/s | vram 3.97G | ~2.1h left
+step 27,300/45,608 | loss 2.0034 | lr 4.24e-05 | 15,013 tok/s | vram 3.97G | ~2.1h left
+step 27,400/45,608 | loss 1.1892 | lr 4.21e-05 | 15,015 tok/s | vram 3.97G | ~2.1h left
+step 27,500/45,608 | loss 2.5076 | lr 4.18e-05 | 15,016 tok/s | vram 3.97G | ~2.1h left
+step 27,500 | validation 1.6692 (best)
+step 27,600/45,608 | loss 2.1675 | lr 4.15e-05 | 15,012 tok/s | vram 3.97G | ~2.0h left
+step 27,700/45,608 | loss 2.1765 | lr 4.12e-05 | 15,013 tok/s | vram 3.97G | ~2.0h left
+step 27,800/45,608 | loss 1.6823 | lr 4.09e-05 | 15,015 tok/s | vram 3.97G | ~2.0h left
+step 27,900/45,608 | loss 1.4603 | lr 4.06e-05 | 15,016 tok/s | vram 3.97G | ~2.0h left
+step 28,000/45,608 | loss 1.5367 | lr 4.03e-05 | 15,018 tok/s | vram 3.97G | ~2.0h left
+step 28,000 | validation 1.6696 | no improvement 1/12
+step 28,100/45,608 | loss 1.9463 | lr 4.00e-05 | 15,013 tok/s | vram 3.97G | ~2.0h left
+step 28,200/45,608 | loss 1.6563 | lr 3.97e-05 | 15,015 tok/s | vram 3.97G | ~2.0h left
+step 28,300/45,608 | loss 2.0204 | lr 3.94e-05 | 15,016 tok/s | vram 3.97G | ~2.0h left
+step 28,400/45,608 | loss 1.9611 | lr 3.91e-05 | 15,018 tok/s | vram 3.97G | ~2.0h left
+step 28,500/45,608 | loss 0.7256 | lr 3.88e-05 | 15,019 tok/s | vram 3.97G | ~1.9h left
+step 28,500 | validation 1.6670 (best)
+step 28,600/45,608 | loss 2.6027 | lr 3.85e-05 | 15,015 tok/s | vram 3.97G | ~1.9h left
+step 28,700/45,608 | loss 1.5507 | lr 3.82e-05 | 15,016 tok/s | vram 3.97G | ~1.9h left
+step 28,800/45,608 | loss 2.4648 | lr 3.79e-05 | 15,018 tok/s | vram 3.97G | ~1.9h left
+step 28,900/45,608 | loss 1.8436 | lr 3.76e-05 | 15,019 tok/s | vram 3.97G | ~1.9h left
+step 29,000/45,608 | loss 1.8396 | lr 3.73e-05 | 15,021 tok/s | vram 3.97G | ~1.9h left
+step 29,000 | validation 1.6676 | no improvement 1/12
+step 29,100/45,608 | loss 1.4153 | lr 3.70e-05 | 15,017 tok/s | vram 3.97G | ~1.9h left
+step 29,200/45,608 | loss 1.6442 | lr 3.68e-05 | 15,018 tok/s | vram 3.97G | ~1.9h left
+step 29,300/45,608 | loss 1.9829 | lr 3.65e-05 | 15,020 tok/s | vram 3.97G | ~1.9h left
+step 29,400/45,608 | loss 2.3032 | lr 3.62e-05 | 15,021 tok/s | vram 3.97G | ~1.8h left
+step 29,500/45,608 | loss 1.4385 | lr 3.59e-05 | 15,022 tok/s | vram 3.97G | ~1.8h left
+step 29,500 | validation 1.6676 | no improvement 2/12
+step 29,600/45,608 | loss 0.6359 | lr 3.56e-05 | 15,020 tok/s | vram 3.97G | ~1.8h left
+step 29,700/45,608 | loss 2.2285 | lr 3.53e-05 | 15,021 tok/s | vram 3.97G | ~1.8h left
+step 29,800/45,608 | loss 2.2321 | lr 3.50e-05 | 15,022 tok/s | vram 3.97G | ~1.8h left
+step 29,900/45,608 | loss 1.3387 | lr 3.48e-05 | 15,024 tok/s | vram 3.97G | ~1.8h left
+step 30,000/45,608 | loss 0.9620 | lr 3.45e-05 | 15,025 tok/s | vram 3.97G | ~1.8h left
+step 30,000 | validation 1.6674 | no improvement 3/12
+step 30,100/45,608 | loss 1.9954 | lr 3.42e-05 | 15,021 tok/s | vram 3.97G | ~1.8h left
+step 30,200/45,608 | loss 1.0501 | lr 3.39e-05 | 15,022 tok/s | vram 3.97G | ~1.8h left
+step 30,300/45,608 | loss 1.0512 | lr 3.36e-05 | 15,024 tok/s | vram 3.97G | ~1.7h left
+step 30,400/45,608 | loss 1.2736 | lr 3.34e-05 | 15,025 tok/s | vram 3.97G | ~1.7h left
+step 30,500/45,608 | loss 1.6609 | lr 3.31e-05 | 15,026 tok/s | vram 3.97G | ~1.7h left
+step 30,500 | validation 1.6660 (best)
+step 30,600/45,608 | loss 1.0619 | lr 3.28e-05 | 15,022 tok/s | vram 3.97G | ~1.7h left
+step 30,700/45,608 | loss 1.0033 | lr 3.25e-05 | 15,024 tok/s | vram 3.97G | ~1.7h left
+step 30,800/45,608 | loss 2.1417 | lr 3.23e-05 | 15,025 tok/s | vram 3.97G | ~1.7h left
+step 30,900/45,608 | loss 1.4942 | lr 3.20e-05 | 15,026 tok/s | vram 3.97G | ~1.7h left
+step 31,000/45,608 | loss 1.0110 | lr 3.17e-05 | 15,028 tok/s | vram 3.97G | ~1.7h left
+step 31,000 | validation 1.6666 | no improvement 1/12
+step 31,100/45,608 | loss 0.5123 | lr 3.14e-05 | 15,024 tok/s | vram 3.97G | ~1.6h left
+step 31,200/45,608 | loss 1.9178 | lr 3.12e-05 | 15,025 tok/s | vram 3.97G | ~1.6h left
+step 31,300/45,608 | loss 2.1516 | lr 3.09e-05 | 15,027 tok/s | vram 3.97G | ~1.6h left
+step 31,400/45,608 | loss 1.6442 | lr 3.06e-05 | 15,028 tok/s | vram 3.97G | ~1.6h left
+step 31,500/45,608 | loss 1.4681 | lr 3.04e-05 | 15,029 tok/s | vram 3.97G | ~1.6h left
+step 31,500 | validation 1.6657 (best)
+step 31,600/45,608 | loss 1.5549 | lr 3.01e-05 | 15,025 tok/s | vram 3.97G | ~1.6h left
+step 31,700/45,608 | loss 1.9412 | lr 2.98e-05 | 15,027 tok/s | vram 3.97G | ~1.6h left
+step 31,800/45,608 | loss 1.5292 | lr 2.96e-05 | 15,028 tok/s | vram 3.97G | ~1.6h left
+step 31,900/45,608 | loss 2.0295 | lr 2.93e-05 | 15,029 tok/s | vram 3.97G | ~1.6h left
+step 32,000/45,608 | loss 2.0300 | lr 2.91e-05 | 15,030 tok/s | vram 3.97G | ~1.5h left
+step 32,000 | validation 1.6669 | no improvement 1/12
+step 32,100/45,608 | loss 1.2920 | lr 2.88e-05 | 15,026 tok/s | vram 3.97G | ~1.5h left
+step 32,200/45,608 | loss 2.1517 | lr 2.85e-05 | 15,027 tok/s | vram 3.97G | ~1.5h left
+step 32,300/45,608 | loss 1.1224 | lr 2.83e-05 | 15,029 tok/s | vram 3.97G | ~1.5h left
+step 32,400/45,608 | loss 1.0908 | lr 2.80e-05 | 15,030 tok/s | vram 3.97G | ~1.5h left
+step 32,500/45,608 | loss 1.2187 | lr 2.78e-05 | 15,031 tok/s | vram 3.97G | ~1.5h left
+step 32,500 | validation 1.6649 (best)
+step 32,600/45,608 | loss 2.1007 | lr 2.75e-05 | 15,028 tok/s | vram 3.97G | ~1.5h left
+step 32,700/45,608 | loss 1.6597 | lr 2.73e-05 | 15,029 tok/s | vram 3.97G | ~1.5h left
+step 32,800/45,608 | loss 2.0740 | lr 2.70e-05 | 15,030 tok/s | vram 3.97G | ~1.5h left
+step 32,900/45,608 | loss 2.0502 | lr 2.68e-05 | 15,031 tok/s | vram 3.97G | ~1.4h left
+step 33,000/45,608 | loss 1.9003 | lr 2.65e-05 | 15,033 tok/s | vram 3.97G | ~1.4h left
+step 33,000 | validation 1.6640 (best)
+step 33,100/45,608 | loss 1.8307 | lr 2.63e-05 | 15,028 tok/s | vram 3.97G | ~1.4h left
+step 33,200/45,608 | loss 1.4691 | lr 2.61e-05 | 15,029 tok/s | vram 3.97G | ~1.4h left
+step 33,300/45,608 | loss 2.1331 | lr 2.58e-05 | 15,030 tok/s | vram 3.97G | ~1.4h left
+step 33,400/45,608 | loss 2.5361 | lr 2.56e-05 | 15,031 tok/s | vram 3.97G | ~1.4h left
+step 33,500/45,608 | loss 2.0805 | lr 2.53e-05 | 15,033 tok/s | vram 3.97G | ~1.4h left
+step 33,500 | validation 1.6623 (best)
+step 33,600/45,608 | loss 1.2565 | lr 2.51e-05 | 15,029 tok/s | vram 3.97G | ~1.4h left
+step 33,700/45,608 | loss 1.3612 | lr 2.49e-05 | 15,030 tok/s | vram 3.97G | ~1.4h left
+step 33,800/45,608 | loss 2.1844 | lr 2.46e-05 | 15,032 tok/s | vram 3.97G | ~1.3h left
+step 33,900/45,608 | loss 1.1991 | lr 2.44e-05 | 15,033 tok/s | vram 3.97G | ~1.3h left
+step 34,000/45,608 | loss 2.1940 | lr 2.42e-05 | 15,034 tok/s | vram 3.97G | ~1.3h left
+step 34,000 | validation 1.6630 | no improvement 1/12
+step 34,100/45,608 | loss 1.8816 | lr 2.39e-05 | 15,031 tok/s | vram 3.97G | ~1.3h left
+step 34,200/45,608 | loss 1.1418 | lr 2.37e-05 | 15,032 tok/s | vram 3.97G | ~1.3h left
+step 34,300/45,608 | loss 1.7001 | lr 2.35e-05 | 15,033 tok/s | vram 3.97G | ~1.3h left
+step 34,400/45,608 | loss 1.2520 | lr 2.33e-05 | 15,034 tok/s | vram 3.97G | ~1.3h left
+step 34,500/45,608 | loss 0.6650 | lr 2.30e-05 | 15,035 tok/s | vram 3.97G | ~1.3h left
+step 34,500 | validation 1.6612 (best)
+step 34,600/45,608 | loss 2.2126 | lr 2.28e-05 | 15,032 tok/s | vram 3.97G | ~1.2h left
+step 34,700/45,608 | loss 1.5079 | lr 2.26e-05 | 15,033 tok/s | vram 3.97G | ~1.2h left
+step 34,800/45,608 | loss 1.6778 | lr 2.24e-05 | 15,034 tok/s | vram 3.97G | ~1.2h left
+step 34,900/45,608 | loss 1.6432 | lr 2.22e-05 | 15,035 tok/s | vram 3.97G | ~1.2h left
+step 35,000/45,608 | loss 1.4912 | lr 2.19e-05 | 15,037 tok/s | vram 3.97G | ~1.2h left
+step 35,000 | validation 1.6598 (best)
+step 35,100/45,608 | loss 2.0598 | lr 2.17e-05 | 15,032 tok/s | vram 3.97G | ~1.2h left
+step 35,200/45,608 | loss 1.9957 | lr 2.15e-05 | 15,033 tok/s | vram 3.97G | ~1.2h left
+step 35,300/45,608 | loss 0.9746 | lr 2.13e-05 | 15,034 tok/s | vram 3.97G | ~1.2h left
+step 35,400/45,608 | loss 0.3856 | lr 2.11e-05 | 15,035 tok/s | vram 3.97G | ~1.2h left
+step 35,500/45,608 | loss 1.9534 | lr 2.09e-05 | 15,036 tok/s | vram 3.97G | ~1.1h left
+step 35,500 | validation 1.6591 (best)
+step 35,600/45,608 | loss 1.0880 | lr 2.07e-05 | 15,033 tok/s | vram 3.97G | ~1.1h left
+step 35,700/45,608 | loss 1.7752 | lr 2.05e-05 | 15,034 tok/s | vram 3.97G | ~1.1h left
+step 35,800/45,608 | loss 2.4738 | lr 2.03e-05 | 15,035 tok/s | vram 3.97G | ~1.1h left
+step 35,900/45,608 | loss 0.6910 | lr 2.01e-05 | 15,036 tok/s | vram 3.97G | ~1.1h left
+step 36,000/45,608 | loss 1.3377 | lr 1.99e-05 | 15,037 tok/s | vram 3.97G | ~1.1h left
+step 36,000 | validation 1.6598 | no improvement 1/12
+step 36,100/45,608 | loss 0.8919 | lr 1.97e-05 | 15,034 tok/s | vram 3.97G | ~1.1h left
+step 36,200/45,608 | loss 2.1505 | lr 1.95e-05 | 15,035 tok/s | vram 3.97G | ~1.1h left
+step 36,300/45,608 | loss 1.4055 | lr 1.93e-05 | 15,036 tok/s | vram 3.97G | ~1.1h left
+step 36,400/45,608 | loss 1.3300 | lr 1.91e-05 | 15,037 tok/s | vram 3.97G | ~1.0h left
+step 36,500/45,608 | loss 1.1875 | lr 1.89e-05 | 15,038 tok/s | vram 3.97G | ~1.0h left
+step 36,500 | validation 1.6599 | no improvement 2/12
+step 36,600/45,608 | loss 1.2799 | lr 1.87e-05 | 15,036 tok/s | vram 3.97G | ~1.0h left
+step 36,700/45,608 | loss 0.9504 | lr 1.85e-05 | 15,037 tok/s | vram 3.97G | ~1.0h left
+step 36,800/45,608 | loss 1.2171 | lr 1.84e-05 | 15,038 tok/s | vram 3.97G | ~1.0h left
+step 36,900/45,608 | loss 0.8488 | lr 1.82e-05 | 15,039 tok/s | vram 3.97G | ~1.0h left
+step 37,000/45,608 | loss 1.8757 | lr 1.80e-05 | 15,040 tok/s | vram 3.97G | ~1.0h left
+step 37,000 | validation 1.6594 | no improvement 3/12
+step 37,100/45,608 | loss 2.3615 | lr 1.78e-05 | 15,037 tok/s | vram 3.97G | ~1.0h left
+step 37,200/45,608 | loss 1.3845 | lr 1.76e-05 | 15,038 tok/s | vram 3.97G | ~1.0h left
+step 37,300/45,608 | loss 2.0407 | lr 1.75e-05 | 15,039 tok/s | vram 3.97G | ~0.9h left
+step 37,400/45,608 | loss 0.8667 | lr 1.73e-05 | 15,040 tok/s | vram 3.97G | ~0.9h left
+step 37,500/45,608 | loss 0.9873 | lr 1.71e-05 | 15,041 tok/s | vram 3.97G | ~0.9h left
+step 37,500 | validation 1.6609 | no improvement 4/12
+step 37,600/45,608 | loss 1.4679 | lr 1.69e-05 | 15,039 tok/s | vram 3.97G | ~0.9h left
+step 37,700/45,608 | loss 2.4336 | lr 1.68e-05 | 15,040 tok/s | vram 3.97G | ~0.9h left
+step 37,800/45,608 | loss 2.1386 | lr 1.66e-05 | 15,041 tok/s | vram 3.97G | ~0.9h left
+step 37,900/45,608 | loss 1.1360 | lr 1.64e-05 | 15,042 tok/s | vram 3.97G | ~0.9h left
+step 38,000/45,608 | loss 1.3929 | lr 1.63e-05 | 15,043 tok/s | vram 3.97G | ~0.9h left
+step 38,000 | validation 1.6615 | no improvement 5/12
+step 38,100/45,608 | loss 1.6171 | lr 1.61e-05 | 15,040 tok/s | vram 3.97G | ~0.9h left
+step 38,200/45,608 | loss 2.3034 | lr 1.60e-05 | 15,041 tok/s | vram 3.97G | ~0.8h left
+step 38,300/45,608 | loss 1.5580 | lr 1.58e-05 | 15,042 tok/s | vram 3.97G | ~0.8h left
+step 38,400/45,608 | loss 2.0109 | lr 1.57e-05 | 15,043 tok/s | vram 3.97G | ~0.8h left
+step 38,500/45,608 | loss 1.7978 | lr 1.55e-05 | 15,044 tok/s | vram 3.97G | ~0.8h left
+step 38,500 | validation 1.6597 | no improvement 6/12
+step 38,600/45,608 | loss 0.9275 | lr 1.53e-05 | 15,042 tok/s | vram 3.97G | ~0.8h left
+step 38,700/45,608 | loss 1.8317 | lr 1.52e-05 | 15,043 tok/s | vram 3.97G | ~0.8h left
+step 38,800/45,608 | loss 0.8070 | lr 1.51e-05 | 15,044 tok/s | vram 3.97G | ~0.8h left
+step 38,900/45,608 | loss 2.1077 | lr 1.49e-05 | 15,045 tok/s | vram 3.97G | ~0.8h left
+step 39,000/45,608 | loss 1.0944 | lr 1.48e-05 | 15,046 tok/s | vram 3.97G | ~0.7h left
+step 39,000 | validation 1.6595 | no improvement 7/12
+step 39,100/45,608 | loss 2.3860 | lr 1.46e-05 | 15,043 tok/s | vram 3.97G | ~0.7h left
+step 39,200/45,608 | loss 2.2763 | lr 1.45e-05 | 15,044 tok/s | vram 3.97G | ~0.7h left
+step 39,300/45,608 | loss 1.7010 | lr 1.44e-05 | 15,045 tok/s | vram 3.97G | ~0.7h left
+step 39,400/45,608 | loss 1.5774 | lr 1.42e-05 | 15,046 tok/s | vram 3.97G | ~0.7h left
+step 39,500/45,608 | loss 1.5228 | lr 1.41e-05 | 15,047 tok/s | vram 3.97G | ~0.7h left
+step 39,500 | validation 1.6601 | no improvement 8/12
+step 39,600/45,608 | loss 1.2255 | lr 1.40e-05 | 15,045 tok/s | vram 3.97G | ~0.7h left
+step 39,700/45,608 | loss 2.0430 | lr 1.38e-05 | 15,046 tok/s | vram 3.97G | ~0.7h left
+step 39,800/45,608 | loss 2.0880 | lr 1.37e-05 | 15,047 tok/s | vram 3.97G | ~0.7h left
+step 39,900/45,608 | loss 1.7150 | lr 1.36e-05 | 15,048 tok/s | vram 3.97G | ~0.6h left
+step 40,000/45,608 | loss 1.9962 | lr 1.35e-05 | 15,049 tok/s | vram 3.97G | ~0.6h left
+step 40,000 | validation 1.6587 (best)
+step 40,100/45,608 | loss 1.8178 | lr 1.33e-05 | 15,045 tok/s | vram 3.97G | ~0.6h left
+step 40,200/45,608 | loss 1.1568 | lr 1.32e-05 | 15,046 tok/s | vram 3.97G | ~0.6h left
+step 40,300/45,608 | loss 1.0003 | lr 1.31e-05 | 15,046 tok/s | vram 3.97G | ~0.6h left
+step 40,400/45,608 | loss 1.8877 | lr 1.30e-05 | 15,047 tok/s | vram 3.97G | ~0.6h left
+step 40,500/45,608 | loss 1.7592 | lr 1.29e-05 | 15,048 tok/s | vram 3.97G | ~0.6h left
+step 40,500 | validation 1.6592 | no improvement 1/12
+step 40,600/45,608 | loss 1.8556 | lr 1.28e-05 | 15,046 tok/s | vram 3.97G | ~0.6h left
+step 40,700/45,608 | loss 1.5948 | lr 1.27e-05 | 15,047 tok/s | vram 3.97G | ~0.6h left
+step 40,800/45,608 | loss 0.6075 | lr 1.25e-05 | 15,048 tok/s | vram 3.97G | ~0.5h left
+step 40,900/45,608 | loss 1.2522 | lr 1.24e-05 | 15,049 tok/s | vram 3.97G | ~0.5h left
+step 41,000/45,608 | loss 1.4287 | lr 1.23e-05 | 15,050 tok/s | vram 3.97G | ~0.5h left
+step 41,000 | validation 1.6591 | no improvement 2/12
+step 41,100/45,608 | loss 1.8095 | lr 1.22e-05 | 15,047 tok/s | vram 3.97G | ~0.5h left
+step 41,200/45,608 | loss 1.9131 | lr 1.21e-05 | 15,048 tok/s | vram 3.97G | ~0.5h left
+step 41,300/45,608 | loss 2.3485 | lr 1.20e-05 | 15,049 tok/s | vram 3.97G | ~0.5h left
+step 41,400/45,608 | loss 2.1099 | lr 1.20e-05 | 15,050 tok/s | vram 3.97G | ~0.5h left
+step 41,500/45,608 | loss 1.2696 | lr 1.19e-05 | 15,051 tok/s | vram 3.97G | ~0.5h left
+step 41,500 | validation 1.6589 | no improvement 3/12
+step 41,600/45,608 | loss 1.7410 | lr 1.18e-05 | 15,049 tok/s | vram 3.97G | ~0.5h left
+step 41,700/45,608 | loss 2.4854 | lr 1.17e-05 | 15,050 tok/s | vram 3.97G | ~0.4h left
+step 41,800/45,608 | loss 1.7874 | lr 1.16e-05 | 15,051 tok/s | vram 3.97G | ~0.4h left
+step 41,900/45,608 | loss 1.8458 | lr 1.15e-05 | 15,052 tok/s | vram 3.97G | ~0.4h left
+step 42,000/45,608 | loss 1.2114 | lr 1.14e-05 | 15,052 tok/s | vram 3.97G | ~0.4h left
+step 42,000 | validation 1.6588 | no improvement 4/12
+step 42,100/45,608 | loss 1.8101 | lr 1.14e-05 | 15,050 tok/s | vram 3.97G | ~0.4h left
+step 42,200/45,608 | loss 1.5367 | lr 1.13e-05 | 15,050 tok/s | vram 3.97G | ~0.4h left
+step 42,300/45,608 | loss 1.5373 | lr 1.12e-05 | 15,051 tok/s | vram 3.97G | ~0.4h left
+step 42,400/45,608 | loss 1.3406 | lr 1.11e-05 | 15,052 tok/s | vram 3.97G | ~0.4h left
+step 42,500/45,608 | loss 0.6171 | lr 1.11e-05 | 15,053 tok/s | vram 3.97G | ~0.4h left
+step 42,500 | validation 1.6590 | no improvement 5/12
+step 42,600/45,608 | loss 2.2399 | lr 1.10e-05 | 15,051 tok/s | vram 3.97G | ~0.3h left
+step 42,700/45,608 | loss 1.3145 | lr 1.09e-05 | 15,052 tok/s | vram 3.97G | ~0.3h left
+step 42,800/45,608 | loss 1.8710 | lr 1.09e-05 | 15,053 tok/s | vram 3.97G | ~0.3h left
+step 42,900/45,608 | loss 0.8649 | lr 1.08e-05 | 15,054 tok/s | vram 3.97G | ~0.3h left
+step 43,000/45,608 | loss 1.7603 | lr 1.08e-05 | 15,055 tok/s | vram 3.97G | ~0.3h left
+step 43,000 | validation 1.6587 | no improvement 6/12
+step 43,100/45,608 | loss 1.4445 | lr 1.07e-05 | 15,052 tok/s | vram 3.97G | ~0.3h left
+step 43,200/45,608 | loss 2.1463 | lr 1.06e-05 | 15,053 tok/s | vram 3.97G | ~0.3h left
+step 43,300/45,608 | loss 1.9299 | lr 1.06e-05 | 15,054 tok/s | vram 3.97G | ~0.3h left
+step 43,400/45,608 | loss 1.5454 | lr 1.05e-05 | 15,055 tok/s | vram 3.97G | ~0.3h left
+step 43,500/45,608 | loss 1.6820 | lr 1.05e-05 | 15,056 tok/s | vram 3.97G | ~0.2h left
+step 43,500 | validation 1.6583 (best)
+step 43,600/45,608 | loss 0.4695 | lr 1.04e-05 | 15,053 tok/s | vram 3.97G | ~0.2h left
+step 43,700/45,608 | loss 0.7042 | lr 1.04e-05 | 15,054 tok/s | vram 3.97G | ~0.2h left
+step 43,800/45,608 | loss 1.8073 | lr 1.04e-05 | 15,055 tok/s | vram 3.97G | ~0.2h left
+step 43,900/45,608 | loss 0.9250 | lr 1.03e-05 | 15,056 tok/s | vram 3.97G | ~0.2h left
+step 44,000/45,608 | loss 1.0773 | lr 1.03e-05 | 15,057 tok/s | vram 3.97G | ~0.2h left
+step 44,000 | validation 1.6588 | no improvement 1/12
+step 44,100/45,608 | loss 1.9514 | lr 1.03e-05 | 15,054 tok/s | vram 3.97G | ~0.2h left
+step 44,200/45,608 | loss 1.5087 | lr 1.02e-05 | 15,055 tok/s | vram 3.97G | ~0.2h left
+step 44,300/45,608 | loss 1.3595 | lr 1.02e-05 | 15,056 tok/s | vram 3.97G | ~0.1h left
+step 44,400/45,608 | loss 2.1037 | lr 1.02e-05 | 15,057 tok/s | vram 3.97G | ~0.1h left
+step 44,500/45,608 | loss 0.6729 | lr 1.01e-05 | 15,057 tok/s | vram 3.97G | ~0.1h left
+step 44,500 | validation 1.6590 | no improvement 2/12
+step 44,600/45,608 | loss 1.2772 | lr 1.01e-05 | 15,056 tok/s | vram 3.97G | ~0.1h left
+step 44,700/45,608 | loss 2.3901 | lr 1.01e-05 | 15,056 tok/s | vram 3.97G | ~0.1h left
+step 44,800/45,608 | loss 1.6366 | lr 1.01e-05 | 15,057 tok/s | vram 3.97G | ~0.1h left
+step 44,900/45,608 | loss 1.9840 | lr 1.01e-05 | 15,058 tok/s | vram 3.97G | ~0.1h left
+step 45,000/45,608 | loss 1.8717 | lr 1.00e-05 | 15,059 tok/s | vram 3.97G | ~0.1h left
+step 45,000 | validation 1.6571 (best)
+step 45,100/45,608 | loss 0.8895 | lr 1.00e-05 | 15,055 tok/s | vram 3.97G | ~0.1h left
+step 45,200/45,608 | loss 0.8885 | lr 1.00e-05 | 15,056 tok/s | vram 3.97G | ~0.0h left
+step 45,300/45,608 | loss 1.1259 | lr 1.00e-05 | 15,057 tok/s | vram 3.97G | ~0.0h left
+step 45,400/45,608 | loss 1.6086 | lr 1.00e-05 | 15,058 tok/s | vram 3.97G | ~0.0h left
+step 45,500/45,608 | loss 2.1759 | lr 1.00e-05 | 15,059 tok/s | vram 3.97G | ~0.0h left
+step 45,500 | validation 1.6576 | no improvement 1/12
+step 45,600/45,608 | loss 1.9257 | lr 1.00e-05 | 15,057 tok/s | vram 3.97G | ~0.0h left
+step 45,607 | validation 1.6576 | no improvement 2/12
+
+done in 5.2h | best validation 1.6571
+best checkpoint checkpoints\finetune_v2_best.pt
+  memory: working set 2,039 MB (peak 2,222) | private 7,019 MB (peak 7,250) (end of fine-tune)

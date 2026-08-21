@@ -1,0 +1,62 @@
+evaluating checkpoints/finetune_v2_best.pt on cuda
+
+============================================================================================
+behavioural regression (37 tests)
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\behaviour_FINAL.txt (3,148 bytes)
+
+============================================================================================
+yes/no held-out accuracy
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\yesno_heldout_FINAL.txt (476 bytes)
+
+============================================================================================
+RAG vs bare
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\rag_vs_bare_FINAL.txt (7,452 bytes)
+
+============================================================================================
+typo and shorthand robustness
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\typo_probe_FINAL.txt (2,735 bytes)
+
+============================================================================================
+fresh questions and multi-turn
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\fresh_peek_FINAL.txt (6,562 bytes)
+
+============================================================================================
+greetings and identity
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\greeting_probe_FINAL.txt (3,200 bytes)
+
+============================================================================================
+QA stress: negation, false premises, format
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\stress_qa_FINAL.txt (3,652 bytes)
+
+============================================================================================
+robustness: caps, symbols, empty input
+============================================================================================
+  -> C:\Users\arnav\Downloads\AI-TRAINING\tests\stress_robustness_FINAL.txt (4,223 bytes)
+
+============================================================================================
+HEADLINE NUMBERS
+============================================================================================
+    OVERALL     27/37 (73%)
+    WITH context:   287/307  =  93.5%
+    NO context:      53/93   =  57.0%
+    overall:        340/400  =  85.0%   (chance 50.0%)
+    answered Yes 53.2% of the time (a healthy model sits near 50% on a 50/50 set)
+
+============================================================================================
+FOR COMPARISON (measured earlier today)
+============================================================================================
+  pretrained, no fine-tune            behaviour 11/37 (30%)
+  shortcut run, step 10,000           behaviour 28/37 (76%) | yes/no held-out 65.0%
+  shortcut FIXED, step 27,500         behaviour 26/37 (70%) | yes/no held-out 83.2%
+
+  ⚠ Those ran to different step counts on different data. The behavioural subscales
+    have 2-8 items each, so a one-item change moves the total by ~3% and means nothing
+    on its own. The yes/no held-out number is the comparable one: same file, same
+    protocol, 400 examples.

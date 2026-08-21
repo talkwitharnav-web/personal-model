@@ -21,5 +21,8 @@ for hf_split, out_split in split_map.items():
             answer = example["options"][idx].strip()
             article = example["article"].strip()
             question = example["question"].strip()
-            f.write(f"User: {article}\n\n{question}\nAssistant: {answer}\n<|endoftext|>\n")
+            # These are exam questions - without the options they are unanswerable.
+            options = "\n".join(f"- {o.strip()}" for o in example["options"])
+            f.write(f"User: {article}\n\n{question}\n\nOptions:\n{options}\n"
+                    f"Assistant: {answer}\n<|endoftext|>\n")
     print(f"Done: {out_path}")

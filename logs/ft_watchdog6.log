@@ -1,0 +1,22 @@
+[2026-08-19 18:59:26] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 18:59:29] restart 1/25: trainer was down at step 36,200, 4,460 MB free -> started PID 13092 (resumes from the latest checkpoint)
+[2026-08-19 20:03:39] FINE-TUNE COMPLETED at step 45,300. Exiting cleanly.
+[2026-08-19 20:03:39]   done in 1.1h | best validation 1.4620
+[2026-08-19 20:03:39]   best checkpoint checkpoints\finetune_v2_best.pt
+[2026-08-19 20:03:39]     memory: working set 2,012 MB (peak 2,012) | private 7,642 MB (peak 7,866) (end of fine-tune)
+[2026-08-19 20:03:39] running behavioural regression on the fine-tuned checkpoint ...
+[2026-08-19 20:03:49]     length       2/2  ####################
+[2026-08-19 20:03:49]     stopping     7/8  #################
+[2026-08-19 20:03:49]     refusal      8/8  ####################
+[2026-08-19 20:03:49]     maths        0/2  
+[2026-08-19 20:03:49]     OVERALL     24/37 (65%)
+[2026-08-19 20:03:49]   Select fine-tune checkpoints on THIS, not on validation loss alone (section 8).
+[2026-08-19 20:03:49]   -> saved to C:\Users\arnav\Downloads\AI-TRAINING\tests\behaviour_finetuned.txt
+[2026-08-19 20:03:49] running wide peek on the fine-tuned checkpoint ...
+[2026-08-19 20:04:31]     'Although the weather was cold, the children'
+[2026-08-19 20:04:31]       sample: were so happy that they ran home to eat dinner with Mom. They had a great
+[2026-08-19 20:04:31]               time in the park and were excited to come back to the park again soon!
+[2026-08-19 20:04:31]       greedy: were not happy. They wanted to go outside and play. They looked at the sky
+[2026-08-19 20:04:31]               and saw the clouds. They saw the sun and the birds. They saw the flowers and
+[2026-08-19 20:04:31]               the birds. They saw
+[2026-08-19 20:04:31]   -> saved to C:\Users\arnav\Downloads\AI-TRAINING\tests\wide_peek_finetuned.txt

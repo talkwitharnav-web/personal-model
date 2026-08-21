@@ -1,0 +1,29 @@
+{
+  "history": [
+    {
+      "step": 0,
+      "val": 3.0854,
+      "train": 3.1036
+    },
+    {
+      "step": 300,
+      "val": 1.9189,
+      "train": 2.7169
+    },
+    {
+      "step": 599,
+      "val": 1.8718,
+      "train": 2.0347
+    }
+  ],
+  "best_val": 1.8717721184094747,
+  "fingerprint": {
+    "epochs": 2.0,
+    "lr": 0.0001,
+    "warmup": 60,
+    "batch": 8,
+    "grad_accum": 8,
+    "rows": 171871,
+    "arch": "v2"
+  }
+}

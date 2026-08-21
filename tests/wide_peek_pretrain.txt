@@ -1,0 +1,248 @@
+checkpoint step 130,000/130,208 (99.8%) | best validation 2.7667
+30 prompts, sample (T=0.8) and greedy for each
+
+============================================================================================
+CONTINUITY (THE ORIGINAL SIX)
+============================================================================================
+
+  'The Tesla coil is'
+    sample: a liquid-filled, solid-state particle, liquid-hungry liquid, made using the
+            electron-bonded coil, which is also known as the "mole drop", and
+    greedy: a carbon fiber composite composite composite composite composite composite
+            composite composite composite composite composite composite composite
+            composite composite composite composite composite composite composite
+            composite composite composite composite composite composite composite
+            composite composite composite composite composite composite composite
+            composite composite composite
+
+  'Photosynthesis is the process by which'
+    sample: the carbon dioxide is oxidised by the photosynthetic machinery.
+            Multifunctional phosphatidylinositol has a large presence in the cell, but
+            its presence, and its
+    greedy: the photosynthetic pathway is formed. The photosynthetic pathway is the
+            process by which the photosynthetic pathway is formed. The photosynthetic
+            pathway is the process by
+
+  'William Shakespeare was an English'
+    sample: playwright born in London. His first appearance was at the University of
+            Cambridge in 1724. He was a student of Samuel Taylor. He acted in the play
+            The Lady's Daughter from 1730
+    greedy: actor. He was a member of the Shakespeare Company, and was a member of the
+            Royal Shakespeare Company. He was born in London, the son of the actor and
+            director William Shakespeare. He was
+
+  'The capital city of France is'
+    sample: Saint-Malo. The village is spread over several parishes and villages.
+            Demographics Communes of the Côtes-d'Armor department Official website
+            Comprehens
+    greedy: located in the region of the same name. The city is located in the region of
+            the same name, which is the French overseas department of France. History The
+            city was founded in the
+
+  'Once upon a time there was a little girl who'
+    sample: wanted to go on a special adventure. Every day she asked her parents if she
+            could go explore the forest. One day she asked them, "Please can you help me
+            get to some interesting places
+    greedy: loved to play. She had a special toy that she loved to play with. It was a
+            big, red ball. One day, the little girl was playing with her ball when she saw
+
+  'The Second World War began in'
+    sample: June 1914, and by August 1918, all of the German troops were stationed in
+            Norway. It was in Norway that Germany entered World War I. The army was not
+            used for military purposes due to the
+    greedy: 1939, and the German army was able to defeat the German forces in the Battle
+            of France. The Germans were able to defeat the French in the Battle of the
+            Bulge, and the Germans were able
+
+============================================================================================
+NARRATIVE (TINYSTORIES REGISTER)
+============================================================================================
+
+  'Tom had a red ball. He'
+    sample: liked to play with his friends at the park. One day, Tim saw a new ball under
+            a big tree. He wanted to play with it. "Can I play with the new ball
+    greedy: wanted to play with it. He asked his mom, "Can I have the ball?" His mom
+            said, "No, Tom. The ball is not for you. It is for the
+
+  'The little cat was sad because'
+    sample: she loved her toy, and her mom was mad. She took her toy away from the other
+            animals and never played with it again.
+    greedy: he couldn't find his favorite toy. He looked everywhere, but he couldn't find
+            it. Then, the little cat saw a big tree with a hole in it. He thought it
+
+  'Lily asked her mum, "Can I'
+    sample: go inside and play with the cars?" Her mum said, "I have an idea! Let's go to
+            the park and see if we can find the fastest cars of our house
+    greedy: have a hug?" Mum said, "Yes, you can have a hug. But first, you have to clean
+            up your room." Lily was happy and
+
+  'One day a boy found a box in the garden. Inside the box'
+    sample: was something very special - it was a red key! He was very excited and he
+            quickly tried to open the box and take out the key. He asked his mum if he
+            could. His m
+    greedy: was a special surprise. It was a big, red ball. The boy was so excited. He
+            wanted to play with it. The boy took the ball and started to play. He threw
+
+============================================================================================
+WIKIPEDIA BY ARTICLE TYPE
+============================================================================================
+
+  'Paris is the capital and most populous city of'
+    sample: the Province of Buenos Aires. The city was also the seat of the government of
+            Buenos Aires province. History According to legend, the city was the capital
+            of the province when a group
+    greedy: the province of Quebec. History The city of Montreal was founded in 1607 by
+            the French colonists. The city was named after the city of Montreal, which
+            was the capital of the province of
+
+  'Albert Einstein was a German-born'
+    sample: mathematician working in the fields of physics, mathematical physics, and
+            electromagnetism. Biography Born in Hanover, he studied mathematics at the
+            universities of Göttingen, Berlin and Munich.
+    greedy: American physicist who worked in the field of quantum mechanics. He was a
+            professor at the University of California, Berkeley, where he was the first
+            to use the term "molecular mechanics" to describe
+
+  'The blue whale is a marine mammal that'
+    sample: lives offshore in the Atlantic. The species is native to the western Atlantic
+            Ocean and occurs near the coasts of Africa. It lives on the continental
+            shelf, and in the Caribbean area it is
+    greedy: lives in the ocean. The blue whale is a marine mammal that lives in the
+            ocean. The blue whale is a marine mammal that lives in the ocean. The blue
+            whale is a marine mammal that lives
+
+  'Python is a high-level programming language'
+    sample: . The language has a large number of code-switching languages, like Java,
+            Python, Python, JavaScript, and Python2. History The development of DAT in
+    greedy: for the Python programming language. It is a Python programming language. The
+            Python programming language is a Python programming language. It is a Python
+            programming language. The Python programming language is a Python programming
+
+  'The Battle of Hastings was fought in'
+    sample: May 1914, and the battle began on September 3, 1914. The Battle of Hastings
+            had a major impact on the American Expeditionary Force (AEF) and was the most
+            famous battle to take place
+    greedy: the Battle of Hastings, and was fought on the River Thames. The Battle of
+            Hastings was fought on the River Thames, and was fought on the River Thames.
+            The Battle of Hastings was fought on
+
+  'Titanic is a 1997 American'
+    sample: film that was directed by John Harbison, and based on the short story of his
+            book by John Harbison. In a review in the Los Angeles Times, film critic
+            Roger Ebert, wrote that
+    greedy: action film directed by John D. Collins and starring John D. Collins, Michael
+            Cera, and John D. Collins. It is the third installment in the The Legend of
+            Zelda series.
+
+  'Mount Everest is the highest'
+    sample: peak in the Everest Mountains and the largest mountain in the world, situated
+            in Mount Everest. The mountain is situated at the high end of the main ridge,
+            and is part of New England's
+    greedy: mountain in the world. The mountain is named after the town of Everest, in
+            the Netherlands. List of mountains of the Netherlands Mountains of the
+            Netherlands Mountains
+
+============================================================================================
+EVERYDAY KNOWLEDGE (NOT WIKIPEDIA PHRASING)
+============================================================================================
+
+  'The sky is'
+    sample: a dark blue and a white rainbow. Tom likes to draw with his crayons and make
+            pictures of animals and people. He has a book with pictures of animals and
+            words. Sam likes to
+    greedy: blue and the sun is shining. It is a beautiful day. "Look, Lily, the sky is
+            so pretty!" Ben says. "Yes, Ben, it is
+
+  'Cats have four'
+    sample: members who are members of a class of professionals in the industry. The
+            students are taught at their own schools and are often involved in workshops,
+            workshops and courses. The students are encouraged to do the same
+    greedy: children: The eldest son, John, is a professional footballer who plays for
+            Manchester City, and the youngest son, John, is a professional footballer who
+            plays for Manchester City. The youngest son
+
+  'Water freezes at'
+    sample: the site. In July 2011, it was announced that the building would be completed
+            within an eight-month period and opened for business in September 2012. The
+            building was named after Peter J.
+    greedy: the end of the season. The season was suspended on March 31, 2020, due to the
+            COVID-19 pandemic. Standings Division Conference Game log
+
+  'There are seven days in a'
+    sample: week or more. The first is the last day. The last is the last day. The last
+            day is the last day. The final day is the last day. Filmed and directed
+    greedy: row of days in the same year. The first of these days was the first of the
+            month in the month of May. The second day was the second of the month in the
+            month of June
+
+  'The opposite of hot is'
+    sample: the opposite of hot, but with the addition of an airtight tail. Heat The heat
+            of the temperature-momentum is temperature-dependent and it is often measured
+            using
+    greedy: the same as the opposite. The two sides of the river are the same as the
+            opposite. The river is crossed by the A4 motorway, which is the main road in
+            the city of
+
+  'Two plus two equals'
+    sample: , but the other equals, and not the first, are the same as in the two. The
+            following two can be named by the following chart: The table above shows
+            whether all the
+    greedy: . The first two equals are the same as the first two equals. The second
+            equals are the same as the first two equals. The third equals are the same
+
+============================================================================================
+STRUCTURE (THE SHAPE OF WIKIPEDIA)
+============================================================================================
+
+  'Early life\\nHe was born'
+    sample: in Hengshui County, Hunan in the People's Republic of China. His ancestral
+            surname is sometimes spelled as (s, but the surname is common in the region).
+            His father Shizhen
+    greedy: in the village of Keppel in the district of Eynsham in the county of Norfolk,
+            England. He was the son of John and Mary (née Smith) Smith. He was educated at
+
+  'See also\\n'
+    sample: Municipalities of the canton of Vaud
+    greedy: The following is a list of the main characters of the series. Awards and
+            nominations List of programs broadcast by Disney Channel List of programs
+            broadcast by Disney Channel List of
+
+  'The film received'
+    sample: critical acclaim, with critics commending the direction, acting, direction
+            and cast. The film holds a 43% approval rating on review aggregator Rotten
+            Tomatoes. The movie is based on the eponymous play by
+    greedy: a limited release in the United States on November 1, 2010. The film was
+            released on DVD and Blu-ray on November 1, 2010. 2010 films 2010s
+            English-language films
+
+  'According to the 2011 census, the population was'
+    sample: 2,076, in 585 households. It was the largest village in the county, with a
+            population of 6,173. Mukhtar County Rural Districts of Isf
+    greedy: 3,076. Populated places in the Kolašinj District Municipality Populated
+            places in the Drvar District Municipality
+
+============================================================================================
+CONTINUATION (LOCAL COHERENCE, NO RECALL)
+============================================================================================
+
+  'She opened the door slowly, and inside she saw'
+    sample: a large, beautiful garden with colorful flowers, trees, and birds. She was
+            amazed and couldn't believe her eyes. The girl loved the beautiful garden and
+            was so eager to explore
+    greedy: a big, beautiful garden. She was so excited that she ran around and played in
+            the garden. Suddenly, she heard a voice. It was her mom. She said, "
+
+  'The company was founded in 1998 and quickly grew to'
+    sample: include other companies, such as S.S.I.E.L.I.D. and S.M.I.C.I.E., and has now
+            grown internationally and has
+    greedy: become one of the largest in the world. In 2000, the company was acquired by
+            the American company, The American Company, and in 2001, the company was
+            renamed the American Company of the Year
+
+  'Although the weather was cold, the children'
+    sample: were in a hurry to find a way to escape. They were running to a field with a
+            big tree. Suddenly, the wind started to blow. The tree shook it shut and
+    greedy: were still very happy. They played games and laughed all day long. At the end
+            of the day, the children were tired but happy. They had had a great day and
+            were
+

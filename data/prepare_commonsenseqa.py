@@ -19,5 +19,9 @@ for hf_split, out_split in split_map.items():
                 continue
             idx = example["choices"]["label"].index(answer_key)
             answer_text = example["choices"]["text"][idx]
-            f.write(f"User: {example['question'].strip()}\nAssistant: {answer_text.strip()}\n<|endoftext|>\n")
+            # Without the choices the question is unanswerable - several options are
+            # equally plausible, so the model would only learn to guess confidently.
+            options = "\n".join(f"- {c.strip()}" for c in example["choices"]["text"])
+            f.write(f"User: {example['question'].strip()}\n\nOptions:\n{options}\n"
+                    f"Assistant: {answer_text.strip()}\n<|endoftext|>\n")
     print(f"Done: {out_path}")

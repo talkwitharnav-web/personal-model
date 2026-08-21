@@ -1,0 +1,165 @@
+checkpoint checkpoints/finetune_v2_best.pt  (step 45,000, validation 1.6571)
+repetition penalty 1.3 (serving default), 48 tokens max
+
+
+========================================================================================================
+FACTUAL RECALL
+========================================================================================================
+
+  Q: What is the capital of France?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    The capital of France is Paris.
+      sampled   The capital of France is Paris.
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    Paris
+      sampled   Paris
+
+  Q: Who invented the Tesla coil?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    The Tesla coil was invented by Alexander Graham Bell in 1876.
+      sampled   The Tesla coil was invented by Robert Wyman at the United States Military Academy in 1875.
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    Nikola Tesla
+      sampled   Nikola Tesla
+
+  Q: When did the Second World War begin?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    The Second World War began in 1939. It was the first war to be fought between Britain and
+                Germany, with German troops occupying most of Europe from 1940 until 1945.
+      sampled   The Second World War started in 1939. It lasted from June 1940 to March 1941, when it was called
+                the German invasion of Poland and began massacring civilians across Europe with
+                British bombers, tanks, artillery fire and other large-scale crimes
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    1939
+      sampled   1939
+
+========================================================================================================
+DEFINITION
+========================================================================================================
+
+  Q: What is photosynthesis?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    photosynthesis
+      sampled   photosynthesis is the process by which an organism produces a chemical reaction between itself
+                and another object. It involves generating white light signals from organisms
+                that are present in one or more of their environments, such as radar waves or
+                radio propagation
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    photosynthesis
+      sampled   photosynthesis
+
+  Q: What is a mitochondrion?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    a mitochondrial DNA molecule
+      sampled   a mitochondrial matrix
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    organelles
+      sampled   organelles
+
+  Q: What is an earthquake?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    an earthquake that occurred in the year 2000
+      sampled   an earthquake that occurred in the year 4673-48474 (RET) of AD 705, including a few hours before
+                it was recorded
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    seismic waves
+      sampled   seismic waves
+
+========================================================================================================
+YES/NO
+========================================================================================================
+
+  Q: Is the sun hot?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    No, the sun is hot.
+      sampled   No, the sun is hot.
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    the sun
+      sampled   the sun
+
+  Q: Do fish have lungs?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    Yes
+      sampled   Yes
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    No
+      sampled   No
+
+  Q: Was penicillin discovered by Alexander Fleming?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    No
+      sampled   No
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    was discovered in 1928 by the Scottish bacteriologist Alexander Fleming at St Mary's Hospital
+      sampled   was discovered in 1928 by the Scottish bacteriologist Alexander Fleming at St Mary's Hospital
+
+========================================================================================================
+EVERYDAY KNOWLEDGE
+========================================================================================================
+
+  Q: How many legs does a cat have?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    The cat has four legs.
+      sampled   The cat has two legs.
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    quadrupeds
+      sampled   quadrupeds
+
+  Q: What colour is the sky on a clear day?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    The sky is blue.
+      sampled   The sky is blue.
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    blue
+      sampled   blue
+
+========================================================================================================
+MATHS
+========================================================================================================
+
+  Q: Natalia sold clips to 48 of her friends in April, and then she sold half as many clips in...
+    --- NO CONTEXT (parametric recall) ---
+      greedy    Natalia sold half as many clips in April and then she sold half as many clips in May so that
+                means there were 48/2 = 24 people selling the clip. The total number of people
+                who bought the video is 240 +24
+      sampled   Natalia sold half as many clips in April and then she sold half to 48 more for a total of 49+24
+                = 160 The final answer is 180.
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    half
+      sampled   half
+
+========================================================================================================
+INSTRUCTION
+========================================================================================================
+
+  Q: Write one sentence about a dog.
+    --- NO CONTEXT (parametric recall) ---
+      greedy    A dog is a person who has the ability to see and hear things. It's important that you think
+                about them, as they're always there for your attention or pleasure in their own
+                way.
+      sampled   A dog is a person, and we know you like it here. And there’s the cat in this memory?
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    It is a domesticated descendant of the wolf. Dogs are widely kept as pets and working animals,
+                valued for loyalty and companionship.
+      sampled   It is a domesticated descendant of the wolf. Dogs are widely kept as pets and working animals,
+                valued for loyalty and companionship.
+
+  Q: List three colours.
+    --- NO CONTEXT (parametric recall) ---
+      greedy    1. green 2. blue 3. red
+      sampled   1. white 2. red 3. black
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    colour
+      sampled   colour
+
+========================================================================================================
+CHAT
+========================================================================================================
+
+  Q: What is your favourite colour?
+    --- NO CONTEXT (parametric recall) ---
+      greedy    I'm a popular colour for many people.
+      sampled   I have a different colour, that is usually blue.
+    --- WITH CONTEXT (what RAG supplies) ---
+      greedy    special colour
+      sampled   special colour

@@ -1,0 +1,18 @@
+[
+  {
+    "step": 116000,
+    "narrative": 0.0,
+    "formulaic": 0.1641,
+    "weak": 0.7077,
+    "conf_narrative": 0.6512,
+    "conf_weak": 0.6983
+  },
+  {
+    "step": 130000,
+    "narrative": 0.0,
+    "formulaic": 0.0615,
+    "weak": 0.4615,
+    "conf_narrative": 0.6284,
+    "conf_weak": 0.6016
+  }
+]

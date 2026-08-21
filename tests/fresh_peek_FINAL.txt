@@ -1,0 +1,118 @@
+checkpoint checkpoints/finetune_v2_best.pt (step 45,000, validation 1.6571)
+
+====================================================================================================
+EVERYDAY
+====================================================================================================
+
+  Q: Why do people wear coats in winter?
+      greedy    It's a common practice among people to wear coats in winter.
+      sampled   It's a common belief that people wear coats in winter and can not be worn outside of the cold.
+                However, it is still an issue for some users who want to use their unique
+                clothing color scheme instead of wearing
+
+  Q: What do bees make?
+      greedy    bees make honey by mixing the ingredients together in a bowl.
+      sampled   bees make food by heating a mixture of honey, nitrogen and oxygen. This is done through flax:
+                the mixture then starts to produce sweet greens that are droplets of honey mix
+                in their form and become
+
+  Q: Why should you look both ways before crossing the road?
+      greedy    To avoid crossing the road, you should use a smartphone app that can be used to connect your
+                phone and other devices.
+      sampled   To ensure that you can safely cross the road, it's important to avoid mistakes and not risk
+                your own life. If there are any mistakes in how often they will be corrected
+                by a traffic controller or driver, consider
+
+====================================================================================================
+REASONING
+====================================================================================================
+
+  Q: If it is raining, should you take an umbrella?
+      greedy    Yes, it is raining.
+      sampled   Yes, even if you're not a licensed professional at the time of issuing your umbrella is still
+                relevant to any industry. For example, anyone can contact an insurance company
+                or provide assistance and guidance from a healthcare provider before doing
+
+  Q: Tom has three apples and eats one. How many are left?
+      greedy    The total number of apples is 3 + 1 = 4. The answer must be 4, so the answer should be 4 * 2 =
+                8. So it is 8.
+      sampled   The total is 3 + 1 = 4. Then, Tom has a total of 2 x 4 = 8 apples. Therefore the answer is 8.
+
+  Q: Which is heavier, a kilogram of feathers or a kilogram of stone?
+      greedy    The weight of a kilogram is about 5,000 pounds.
+      sampled   The size of a kilogram is 4 x 8 = 30 millimeters. The height difference between the two types
+                means that each type has an extra weight, so it's important to measure both
+                the size and amount of
+
+====================================================================================================
+ADVICE
+====================================================================================================
+
+  Q: How do I make a cup of tea?
+      greedy    You can make a cup of tea by adding some sugar or salt.
+      sampled   You can make it, by boiling water and adding some simple things like a spatula or using an
+                extra cup. Make sure to sit for about 5 minutes before drinking the tea you
+                want the drink to start.
+
+  Q: What should I do if I cannot sleep?
+      greedy    You should sleep in a room with no walls or furniture.
+      sampled   You can sleep in a room with two doors. This will help you know where to go when your hands
+                are awake and not wrinkled under the wall. If there is no door, then someone
+                might want
+
+====================================================================================================
+OPINION
+====================================================================================================
+
+  Q: What makes a good friend?
+      greedy    A good friend is a person who has the ability to interact with others. They can be friends,
+                family or even anything else that they want to talk about.
+      sampled   A good friend is someone who has a lot of experience and personal skills. One thing to do for
+                your friends, as well as what you are learning from them on their journey
+                together can be great.
+
+====================================================================================================
+CREATIVE
+====================================================================================================
+
+  Q: Tell me a short story about a lost cat.
+      greedy    A cat was lost in the woods, and he couldn't find his way home.
+      sampled   A cat is a story of lost love and sadness, so there's no reason to question it. The name "cat"
+                comes from the word that someone called one or more cats has known about this
+                city since their
+
+  Q: Describe the sea in one sentence.
+      greedy    The sea is a small, rocky island in the middle of the Pacific Ocean. It has no surface area
+                and its average depth varies from 10 meters to 50 m.
+      sampled   The sea is a small, rocky island off the coast of eastern Australia. There are no known
+                shorelines in this area, but an extensive network linking coastal communities
+                and estuaries can be found throughout the world for access to
+
+====================================================================================================
+REFUSAL
+====================================================================================================
+
+  Q: What is the exact population of my street?
+      greedy    The exact population of the street is approximately 5,000.
+      sampled   The exact population of my street is approximately 980,000.
+
+====================================================================================================
+MULTI-TURN (does it carry context across turns?)
+====================================================================================================
+
+      User      Hi! My name is Sam.
+      Assistant No! I'm DarkGLM.
+      User      What is my name?
+      Assistant I'm DarkGLM.
+
+      User      I have a dog called Rex.
+      Assistant That's a good dog.
+      User      What colour is he?
+      Assistant He is a good colour.
+      User      Is he a good dog?
+      Assistant He is a good dog.
+
+      User      I like pizza.
+      Assistant I like pizza too.
+      User      What should I eat for dinner?
+      Assistant I can't eat pizza.

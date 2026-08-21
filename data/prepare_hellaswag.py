@@ -18,5 +18,9 @@ for hf_split, out_split in split_map.items():
             if label == "":
                 continue
             ending = example["endings"][int(label)]
-            f.write(f"User: What happens next? {example['ctx'].strip()}\nAssistant: {ending.strip()}\n<|endoftext|>\n")
+            # Without the endings listed, picking the "right" continuation of four
+            # plausible ones is guesswork.
+            options = "\n".join(f"- {e.strip()}" for e in example["endings"])
+            f.write(f"User: What happens next? {example['ctx'].strip()}\n\nOptions:\n{options}\n"
+                    f"Assistant: {ending.strip()}\n<|endoftext|>\n")
     print(f"Done: {out_path}")

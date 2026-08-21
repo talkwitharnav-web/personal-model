@@ -1,0 +1,120 @@
+{
+  "single_turn_summary": {},
+  "conversation_summary": {},
+  "training_data_audit": {
+    "counts": {
+      "examples": 954493,
+      "multi_turn_examples": 51790,
+      "format_constraint_prompt": 19282,
+      "false_premise_prompt": 2481,
+      "ambiguous_prompt": 958,
+      "comparison_prompt": 2870,
+      "emptyish_prompt": 0,
+      "unknown_answer": 71346,
+      "assistant_name_claim": 23,
+      "open_assistant_claim": 190
+    },
+    "top_assistant_name_claims": [
+      [
+        "Open",
+        3
+      ],
+      [
+        "Ana",
+        2
+      ],
+      [
+        "Jordis",
+        2
+      ],
+      [
+        "John",
+        2
+      ],
+      [
+        "Paula",
+        1
+      ],
+      [
+        "Brian",
+        1
+      ],
+      [
+        "Jubilee",
+        1
+      ],
+      [
+        "Sacha",
+        1
+      ],
+      [
+        "Lana",
+        1
+      ],
+      [
+        "Bleepo",
+        1
+      ],
+      [
+        "Farah",
+        1
+      ],
+      [
+        "Jules",
+        1
+      ],
+      [
+        "Adian",
+        1
+      ],
+      [
+        "Jim",
+        1
+      ],
+      [
+        "Umi",
+        1
+      ],
+      [
+        "Rider",
+        1
+      ],
+      [
+        "Izuku",
+        1
+      ],
+      [
+        "Nyasia",
+        1
+      ]
+    ],
+    "file_example_counts": {
+      "data\\boolq\\train.txt": 7106,
+      "data\\commonsenseqa\\train.txt": 9741,
+      "data\\dailydialog\\train.txt": 11118,
+      "data\\definitions\\train.txt": 68600,
+      "data\\dolly\\train.txt": 14260,
+      "data\\greetings\\train.txt": 5880,
+      "data\\gsm8k\\train.txt": 7473,
+      "data\\gsm8k_clean\\train.txt": 7473,
+      "data\\hellaswag\\train.txt": 39905,
+      "data\\logiqa\\train.txt": 7376,
+      "data\\no_robots\\train.txt": 8737,
+      "data\\oasst1\\train.txt": 16759,
+      "data\\personachat\\train.txt": 8637,
+      "data\\piqa\\train.txt": 16113,
+      "data\\proofwriter\\train.txt": 79998,
+      "data\\race\\train.txt": 87866,
+      "data\\reclor\\train.txt": 4638,
+      "data\\replay\\train.txt": 10600,
+      "data\\sciq\\train.txt": 11679,
+      "data\\socialiqa\\train.txt": 33410,
+      "data\\soda\\train.txt": 40000,
+      "data\\squad\\train.txt": 87599,
+      "data\\squad_v2\\train.txt": 130319,
+      "data\\strategyqa\\train.txt": 1603,
+      "data\\xsum\\train.txt": 204045,
+      "data\\yesno\\train.txt": 33558
+    }
+  }
+}

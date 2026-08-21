@@ -1,0 +1,56 @@
+INDEPENDENT CLAIMS VERIFICATION
+elapsed: 82.2s
+checkpoint: checkpoints/finetune_v2_best.pt
+
+CLAIM 1 - history dropped during retrieval
+  conversational:drop=False          8/12 (66.7%), support=100.0%
+  conversational:drop=True           12/12 (100.0%), support=100.0%
+  factual_sounding:drop=False        4/12 (33.3%), support=100.0%
+  factual_sounding:drop=True         12/12 (100.0%), support=100.0%
+
+CLAIM 2 - all caps normalization
+  raw_caps: {'n': 12, 'hits': 4, 'rate': 0.3333, 'retrieval_rate': 1.0, 'passage_support_rate': 1.0, 'mean_raw_tokens': 16.7, 'mean_normalized_tokens': 16.7}
+  live_caps: {'n': 12, 'hits': 6, 'rate': 0.5, 'retrieval_rate': 1.0, 'passage_support_rate': 1.0, 'mean_raw_tokens': 16.7, 'mean_normalized_tokens': 7.8}
+  lowercase: {'n': 12, 'hits': 6, 'rate': 0.5, 'retrieval_rate': 1.0, 'passage_support_rate': 1.0, 'mean_raw_tokens': 7.8, 'mean_normalized_tokens': 7.8}
+  terse_acronyms:identity: {'n': 6, 'hits': 2, 'rate': 0.3333}
+  terse_acronyms:live: {'n': 6, 'hits': 1, 'rate': 0.1667}
+  mixed_acronyms: {'n': 6, 'changed': 0, 'identical_answers': 6}
+  paired_caps: {'transitions_raw_to_live': {'0->1': 2, '0->0': 6, '1->1': 4}, 'same_route_and_passages': 12, 'pairs': 12, 'live_answer_equals_lowercase': 12}
+
+CLAIM 3 - opening verb frequency
+  Spearman(log checkpoint-proxy count, accuracy): -0.349
+  supported-only Spearman: -0.410; fixed-context Spearman: 0.010
+  frequency bins: {'high_1000_plus': {'n': 25, 'hits': 7, 'rate': 0.28, 'verbs': ['describe', 'explain', 'give', 'tell', 'write'], 'passage_support_rate': 0.88}, 'mid_100_to_999': {'n': 10, 'hits': 2, 'rate': 0.2, 'verbs': ['name', 'provide'], 'passage_support_rate': 1.0}, 'low_under_100': {'n': 40, 'hits': 16, 'rate': 0.4, 'verbs': ['identify', 'mention', 'recall', 'report', 'show', 'specify', 'state', 'supply'], 'passage_support_rate': 0.875}}
+  fixed-context bins: {'high_1000_plus': {'n': 25, 'hits': 13, 'rate': 0.52, 'verbs': ['describe', 'explain', 'give', 'tell', 'write']}, 'mid_100_to_999': {'n': 10, 'hits': 5, 'rate': 0.5, 'verbs': ['name', 'provide']}, 'low_under_100': {'n': 40, 'hits': 21, 'rate': 0.525, 'verbs': ['identify', 'mention', 'recall', 'report', 'show', 'specify', 'state', 'supply']}}
+  question control: {'n': 5, 'hits': 3, 'rate': 0.6}
+  post-checkpoint source files: ['proofwriter', 'greetings', 'instruction_shapes']
+  explain    count=4636   accuracy=2/5 support=100%
+  give       count=4518   accuracy=1/5 support=80%
+  tell       count=4480   accuracy=2/5 support=80%
+  write      count=4327   accuracy=0/5 support=80%
+  describe   count=4152   accuracy=2/5 support=100%
+  name       count=288    accuracy=1/5 support=100%
+  provide    count=146    accuracy=1/5 support=100%
+  identify   count=20     accuracy=2/5 support=100%
+  state      count=13     accuracy=1/5 support=100%
+  show       count=44     accuracy=2/5 support=80%
+  specify    count=0      accuracy=1/5 support=80%
+  supply     count=5      accuracy=2/5 support=80%
+  report     count=8      accuracy=2/5 support=80%
+  recall     count=0      accuracy=3/5 support=100%
+  mention    count=1      accuracy=3/5 support=80%
+
+CLAIM 4 - verdict-word bias
+  format: {"chat": {"opens_with_verdict": {"n": 10, "hits": 1, "rate": 0.1}, "verdict_only": {"n": 10, "hits": 1, "rate": 0.1}, "retrieval_rate": 0.0}, "auto": {"opens_with_verdict": {"n": 10, "hits": 5, "rate": 0.5}, "verdict_only": {"n": 10, "hits": 5, "rate": 0.5}, "retrieval_rate": 1.0}}
+  held-out: {"soda:open_or_statement": {"generated_opens_with_verdict": {"n": 8, "hits": 0, "rate": 0.0}, "reference_opens_with_verdict": {"n": 8, "hits": 1, "rate": 0.125}, "verdict_only": {"n": 8, "hits": 0, "rate": 0.0}}, "soda:yes_no": {"generated_opens_with_verdict": {"n": 8, "hits": 3, "rate": 0.375}, "reference_opens_with_verdict": {"n": 8, "hits": 3, "rate": 0.375}, "verdict_only": {"n": 8, "hits": 0, "rate": 0.0}}, "personachat:open_or_statement": {"generated_opens_with_verdict": {"n": 8, "hits": 0, "rate": 0.0}, "reference_opens_with_verdict": {"n": 8, "hits": 0, "rate": 0.0}, "verdict_only": {"n": 8, "hits": 0, "rate": 0.0}}, "personachat:yes_no": {"generated_opens_with_verdict": {"n": 8, "hits": 5, "rate": 0.625}, "reference_opens_with_verdict": {"n": 8, "hits": 3, "rate": 0.375}, "verdict_only": {"n": 8, "hits": 0, "rate": 0.0}}}
+
+CLAIM 5 - long-range recall
+  cap16_early_initial_cue      recall=3/6 fact-in-prompt=6/6 prompt_tokens=298.5
+  cap16_early_long             recall=2/6 fact-in-prompt=6/6 prompt_tokens=468.5
+  cap16_early_repeated         recall=3/6 fact-in-prompt=6/6 prompt_tokens=291.7
+  cap16_early_single           recall=3/6 fact-in-prompt=6/6 prompt_tokens=291.5
+  cap16_recent                 recall=3/6 fact-in-prompt=6/6 prompt_tokens=291.5
+  cap16_structured_memory      recall=0/6 fact-in-prompt=6/6 prompt_tokens=294.5
+  cap8_early_absent            recall=0/6 fact-in-prompt=0/6 prompt_tokens=176.3
+  direct_current_turn          recall=2/6 fact-in-prompt=6/6 prompt_tokens=20.5
+  fact_only                    recall=5/6 fact-in-prompt=6/6 prompt_tokens=48.5

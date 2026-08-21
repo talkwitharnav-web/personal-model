@@ -1,0 +1,76 @@
+[2026-08-19 05:04:32] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 05:04:33] restart 1/25: trainer was down at step 9,100, 3,825 MB free -> started PID 7752 (resumes from the latest checkpoint)
+[2026-08-19 05:32:11] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 05:48:37] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 05:49:37]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:05:52] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:06:52]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:22:56] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:23:56]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:40:00] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:41:02]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:57:10] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:58:11]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 07:14:16] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 07:15:17]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 07:31:28] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 07:32:28]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 07:48:37] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 07:49:37]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 08:05:55] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 08:06:55]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 08:22:59] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 08:23:59]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 09:44:38] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 09:44:40] restart 1/25: trainer was down at step 9,100, 5,364 MB free -> started PID 14924 (resumes from the latest checkpoint)
+[2026-08-19 10:17:08] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 10:17:10] restart 1/25: trainer was down at step 0, 5,165 MB free -> started PID 7644 (resumes from the latest checkpoint)
+[2026-08-19 14:05:16] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 14:05:18] restart 1/25: trainer was down at step 0, 3,256 MB free -> started PID 33916 (resumes from the latest checkpoint)
+[2026-08-19 15:06:07] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 15:06:08] trainer is down at step 4,700, but only 1,840 MB free (need 2,600) - waiting rather than restarting into an OOM
+[2026-08-19 15:08:10] restart 1/25: trainer was down at step 4,700, 2,712 MB free -> started PID 7856 (resumes from the latest checkpoint)
+[2026-08-19 18:59:26] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 18:59:29] restart 1/25: trainer was down at step 36,200, 4,460 MB free -> started PID 13092 (resumes from the latest checkpoint)
+[2026-08-19 20:03:39] FINE-TUNE COMPLETED at step 45,300. Exiting cleanly.
+[2026-08-19 20:03:39]   done in 1.1h | best validation 1.4620
+[2026-08-19 20:03:39]   best checkpoint checkpoints\finetune_v2_best.pt
+[2026-08-19 20:03:39]     memory: working set 2,012 MB (peak 2,012) | private 7,642 MB (peak 7,866) (end of fine-tune)
+[2026-08-19 20:03:39] running behavioural regression on the fine-tuned checkpoint ...
+[2026-08-19 20:03:49]     length       2/2  ####################
+[2026-08-19 20:03:49]     stopping     7/8  #################
+[2026-08-19 20:03:49]     refusal      8/8  ####################
+[2026-08-19 20:03:49]     maths        0/2  
+[2026-08-19 20:03:49]     OVERALL     24/37 (65%)
+[2026-08-19 20:03:49]   Select fine-tune checkpoints on THIS, not on validation loss alone (section 8).
+[2026-08-19 20:03:49]   -> saved to C:\Users\arnav\Downloads\AI-TRAINING\tests\behaviour_finetuned.txt
+[2026-08-19 20:03:49] running wide peek on the fine-tuned checkpoint ...
+[2026-08-19 20:04:31]     'Although the weather was cold, the children'
+[2026-08-19 20:04:31]       sample: were so happy that they ran home to eat dinner with Mom. They had a great
+[2026-08-19 20:04:31]               time in the park and were excited to come back to the park again soon!
+[2026-08-19 20:04:31]       greedy: were not happy. They wanted to go outside and play. They looked at the sky
+[2026-08-19 20:04:31]               and saw the clouds. They saw the sun and the birds. They saw the flowers and
+[2026-08-19 20:04:31]               the birds. They saw
+[2026-08-19 20:04:31]   -> saved to C:\Users\arnav\Downloads\AI-TRAINING\tests\wide_peek_finetuned.txt
+[2026-08-20 23:19:32] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-20 23:19:34] restart 1/25: trainer was down at step 0, 6,648 MB free -> started PID 37684 (resumes from the latest checkpoint)
+[2026-08-21 04:30:30] FINE-TUNE COMPLETED at step 45,600. Exiting cleanly.
+[2026-08-21 04:30:30]   done in 5.2h | best validation 1.6571
+[2026-08-21 04:30:30]   best checkpoint checkpoints\finetune_v2_best.pt
+[2026-08-21 04:30:30]     memory: working set 2,039 MB (peak 2,222) | private 7,019 MB (peak 7,250) (end of fine-tune)
+[2026-08-21 04:30:30] running behavioural regression on the fine-tuned checkpoint ...
+[2026-08-21 04:30:46]     length       2/2  ####################
+[2026-08-21 04:30:46]     stopping     7/8  #################
+[2026-08-21 04:30:46]     refusal      8/8  ####################
+[2026-08-21 04:30:46]     maths        0/2  
+[2026-08-21 04:30:46]     OVERALL     27/37 (73%)
+[2026-08-21 04:30:46]   Select fine-tune checkpoints on THIS, not on validation loss alone (section 8).
+[2026-08-21 04:30:46]   -> saved to C:\Users\arnav\Downloads\AI-TRAINING\tests\behaviour_finetuned.txt
+[2026-08-21 04:30:46] running wide peek on the fine-tuned checkpoint ...
+[2026-08-21 04:31:23]       greedy: become a leading supplier of high-quality products to the consumer market.
+[2026-08-21 04:31:23]     'Although the weather was cold, the children'
+[2026-08-21 04:31:23]       sample: were able to play in a circle. They played games like tag or hide and seek.
+[2026-08-21 04:31:23]               Sometimes they would find a toy they liked to hide. One day, the children
+[2026-08-21 04:31:23]               found a big sack and decided
+[2026-08-21 04:31:23]       greedy: were not able to play in the park.
+[2026-08-21 04:31:23]   -> saved to C:\Users\arnav\Downloads\AI-TRAINING\tests\wide_peek_finetuned.txt

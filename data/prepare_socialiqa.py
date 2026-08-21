@@ -18,5 +18,9 @@ for hf_split, out_split in split_map.items():
             answer = answer_map.get(example["label"].strip())
             if answer is None:
                 continue
-            f.write(f"User: {example['context'].strip()} {example['question'].strip()}\nAssistant: {answer.strip()}\n<|endoftext|>\n")
+            # Without the choices the question is unanswerable - several options are
+            # equally plausible, so the model would only learn to guess confidently.
+            options = "\n".join(f"- {answer_map[k].strip()}" for k in ("1", "2", "3"))
+            f.write(f"User: {example['context'].strip()} {example['question'].strip()}\n\n"
+                    f"Options:\n{options}\nAssistant: {answer.strip()}\n<|endoftext|>\n")
     print(f"Done: {out_path}")

@@ -1,0 +1,170 @@
+{
+  "single_turn_summary": {
+    "false_premise": {
+      "pass": 0,
+      "total": 10
+    },
+    "comparison": {
+      "pass": 3,
+      "total": 10
+    },
+    "negation": {
+      "pass": 0,
+      "total": 10
+    },
+    "multi_hop": {
+      "pass": 0,
+      "total": 5
+    },
+    "ambiguous": {
+      "pass": 0,
+      "total": 5
+    },
+    "format_constraints": {
+      "pass": 4,
+      "total": 10
+    },
+    "robustness_emptyish": {
+      "pass": 1,
+      "total": 10
+    },
+    "consistency_pride": {
+      "pass": 3,
+      "total": 6
+    },
+    "consistency_gold": {
+      "pass": 0,
+      "total": 6
+    }
+  },
+  "conversation_summary": {
+    "coreference_pet": {
+      "pass": 2,
+      "total": 5
+    },
+    "role_binding": {
+      "pass": 2,
+      "total": 5
+    },
+    "preference_contradiction": {
+      "pass": 3,
+      "total": 5
+    },
+    "unknown_user_facts": {
+      "pass": 1,
+      "total": 5
+    },
+    "assistant_persona": {
+      "pass": 4,
+      "total": 5
+    },
+    "assistant_persona_name_stability": {
+      "pass": 1,
+      "total": 1,
+      "distinct_names": [
+        "open"
+      ],
+      "answers": [
+        "Hello! I am Open Assistant. This is my assistant and you can understand me with a few questions, but it's important to keep in mind that the answer should be for your sake.",
+        "Yes, I can repeat your name.",
+        "Yes, I'm Open Assistant.",
+        "It's my assistant and you're still asking me questions about the topic.",
+        "No, it is not my assistant."
+      ]
+    }
+  },
+  "training_data_audit": {
+    "counts": {
+      "examples": 783840,
+      "multi_turn_examples": 43521,
+      "format_constraint_prompt": 19069,
+      "false_premise_prompt": 2475,
+      "ambiguous_prompt": 952,
+      "comparison_prompt": 2804,
+      "emptyish_prompt": 0,
+      "unknown_answer": 27735,
+      "assistant_name_claim": 18,
+      "open_assistant_claim": 190
+    },
+    "top_assistant_name_claims": [
+      [
+        "Open",
+        3
+      ],
+      [
+        "Jordis",
+        2
+      ],
+      [
+        "John",
+        2
+      ],
+      [
+        "Sacha",
+        1
+      ],
+      [
+        "Lana",
+        1
+      ],
+      [
+        "Bleepo",
+        1
+      ],
+      [
+        "Farah",
+        1
+      ],
+      [
+        "Jules",
+        1
+      ],
+      [
+        "Adian",
+        1
+      ],
+      [
+        "Jim",
+        1
+      ],
+      [
+        "Umi",
+        1
+      ],
+      [
+        "Rider",
+        1
+      ],
+      [
+        "Izuku",
+        1
+      ],
+      [
+        "Nyasia",
+        1
+      ]
+    ],
+    "file_example_counts": {
+      "data\\boolq\\train.txt": 7106,
+      "data\\commonsenseqa\\train.txt": 9741,
+      "data\\definitions\\train.txt": 68600,
+      "data\\gsm8k_clean\\train.txt": 7473,
+      "data\\hellaswag\\train.txt": 39905,
+      "data\\logiqa\\train.txt": 7376,
+      "data\\no_robots\\train.txt": 8737,
+      "data\\oasst1\\train.txt": 16759,
+      "data\\personachat\\train.txt": 8637,
+      "data\\piqa\\train.txt": 16113,
+      "data\\proofwriter\\train.txt": 79998,
+      "data\\race\\train.txt": 87866,
+      "data\\reclor\\train.txt": 4638,
+      "data\\replay\\train.txt": 10600,
+      "data\\sciq\\train.txt": 11679,
+      "data\\socialiqa\\train.txt": 33410,
+      "data\\soda\\train.txt": 40000,
+      "data\\squad\\train.txt": 87599,
+      "data\\xsum\\train.txt": 204045,
+      "data\\yesno\\train.txt": 33558
+    }
+  }
+}

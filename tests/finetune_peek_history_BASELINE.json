@@ -1,0 +1,13 @@
+[
+  {
+    "step": 122000,
+    "best_val": 2.7732691287994387,
+    "blank": 0,
+    "stopped": 0,
+    "loops": 0.774,
+    "warnings": [
+      "SUBJECT ECHO: the definition answer starts by repeating the subject",
+      "LOOPING: repeated 5-grams at 0.77"
+    ]
+  }
+]

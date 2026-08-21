@@ -1,0 +1,2 @@
+[2026-08-19 14:05:16] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 14:05:18] restart 1/25: trainer was down at step 0, 3,256 MB free -> started PID 33916 (resumes from the latest checkpoint)

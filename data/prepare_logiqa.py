@@ -29,5 +29,8 @@ for hf_split, out_split in split_map.items():
                 continue
 
             answer = options[int(correct_index)]
-            f.write(f"User: {context.strip()}\n{query.strip()}\nAssistant: {answer.strip()}\n<|endoftext|>\n")
+            # Multiple choice - listing the options is what makes it answerable.
+            option_lines = "\n".join(f"- {o.strip()}" for o in options)
+            f.write(f"User: {context.strip()}\n{query.strip()}\n\nOptions:\n{option_lines}\n"
+                    f"Assistant: {answer.strip()}\n<|endoftext|>\n")
     print(f"Done: {out_path}")

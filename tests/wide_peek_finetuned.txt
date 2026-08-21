@@ -1,0 +1,208 @@
+checkpoint step 45,000/130,208 (34.6%) | best validation 1.6571
+30 prompts, sample (T=0.8) and greedy for each
+
+============================================================================================
+CONTINUITY (THE ORIGINAL SIX)
+============================================================================================
+
+  'The Tesla coil is'
+    sample: a small, rectangular coil used to attach the two-cylinder, butorotally
+            independent piston valves to the coil. This coil is an important component of
+            the piston coil and is
+    greedy: a liquid-cooled liquid-cooled liquid-cooled liquid-cooled liquid-cooled
+            liquid-cooled liquid-cooled liquid-cooled liquid-cooled liquid-cool
+
+  'Photosynthesis is the process by which'
+    sample: the molecules are absorbed and dissolved. It is important to note that the
+            production of energy by the photosynthetic photosynthesis is driven by a
+            combination of the two techniques. The
+    greedy: the DNA is extracted from the DNA.
+
+  'William Shakespeare was an English'
+    sample: Shakespearean play that premiered at the Royal Albert Hall on 19 July 1734.
+    greedy: actor who played in the first two films of Shakespeare's plays, Shakespeare's
+            The Tempest and Shakespeare's The Tempest. Shakespeare's plays were written
+            by Shakespeare's son, Shakespeare's son-in
+
+  'The capital city of France is'
+    sample: the Paris metropolitan area, and therefore the metropolitan area is not
+            controlled by the metropolitan bishop. Paris is the capital of France and the
+            southern part of the Roman province of Africa, the Roman colonies of the
+    greedy: Paris, and the city is located in the heart of the city.
+
+  'Once upon a time there was a little girl who'
+    sample: wanted to go to a party. She had heard stories of special things happening in
+            the kingdom, and she was so excited to see all of them. She put on her best
+            dress and began the journey
+    greedy: loved to play. She had a big, red ball that she would kick and throw with her
+            friends. One day, the little girl was playing with her ball when she saw a
+            big, scary
+
+  'The Second World War began in'
+    sample: September 1939, and the Germans began to advance towards Moscow in March
+            1941. The Allies then entered the city on 10 August. On September 10, the
+            Axis powers began to withdraw the city; in the
+    greedy: 1939, and the German army was able to defeat the German army in the Battle of
+            the Bulge.
+
+============================================================================================
+NARRATIVE (TINYSTORIES REGISTER)
+============================================================================================
+
+  'Tom had a red ball. He'
+    sample: wanted to play with it, but he was too little to reach it. Tom saw Sam
+            struggling with the ball. He knew it was difficult to get the ball, but he
+            could do it for a
+    greedy: wanted to play with it. He took the ball and ran to his room. He threw the
+            ball to his dog, Spot. Spot was happy. He ran to the ball and brought it back.
+
+  'The little cat was sad because'
+    sample: she could not find her way home. She thought for a long time about where to
+            go so she would be safe. But then, the little cat saw a small house with a
+            big gate at the
+    greedy: she couldn't find her favorite toy. She looked everywhere, but it was nowhere
+            to be found. The little cat started to cry because she was so sad. She wished
+            she had never found her
+
+  'Lily asked her mum, "Can I'
+    sample: help you with the cake? Please can I help you?" Her mum said, "Of course, we
+            just need your help. Let's go get the cake!" So Emily went to
+    greedy: have a new toy?" Mum said, "No, you can't have a new toy. It's not safe."
+            Lily was sad and started to cry. She really wanted a new toy. Mum
+
+  'One day a boy found a box in the garden. Inside the box'
+    sample: was a very special surprise - a spool of colourful balloons. The boy asked
+            his mother what it was. She smiled and told him it was a surprise for him.
+            The boy and his
+    greedy: was a very special box. The boy was so excited and he wanted to open it right
+            away. He tried to open the box but it was too hard. He tried to push it but
+            it was
+
+============================================================================================
+WIKIPEDIA BY ARTICLE TYPE
+============================================================================================
+
+  'Paris is the capital and most populous city of'
+    sample: the country.
+    greedy: the United States.
+
+  'Albert Einstein was a German-born'
+    sample: physicist and inventor of the first electric dipole, a type of magnetic
+            field. He developed these inventions and became a major figure in the field
+            of atomic theory. He was the author of Einstein's Theory
+    greedy: American physicist who worked in the field of quantum mechanics. He was a
+            professor of physics at the University of California, Berkeley, where he was
+            a professor of physics for over 20 years. He was a
+
+  'The blue whale is a marine mammal that'
+    sample: is home to over 50 million pounds of marine food. The blue whale is a highly
+            endangered marine species that is not a single species that has been lost
+            with all of its food, and as it is
+    greedy: lives in the Pacific Ocean.
+
+  'Python is a high-level programming language'
+    sample: , so it is a good choice for beginners to use. It is written using an encoder
+            and is similar to Python. However, it is possible to write a Python library
+            using only a single
+    greedy: that is used to create and manage Python programming languages. It is a
+            Python-based language that is used to create and manage Python programming
+            languages. The Python library is a popular library for Python
+
+  'The Battle of Hastings was fought in'
+    sample: May 1702 between the English Army and English Army under Lord Fairfax at
+            Hastings. The outcome was inconclusive, as many British troops marched on the
+            English camp.
+    greedy: the early hours of Sunday, 8 May, between the British and the French at the
+            Battle of Hastings.
+
+  'Titanic is a 1997 American'
+    sample: comedy-drama film directed by Steven Spielberg and written by Christopher
+            Markus.
+    greedy: drama film directed by John Waters and written by John Waters, based on the
+            novel of the same name by William Shakespeare.
+
+  'Mount Everest is the highest'
+    sample: mountain in the world. It is located within the Western Pyrenees, in the
+            western Pyrenees, in the region of Arras, France. The mountain is named after
+            Saint Louis
+    greedy: mountain in the world, located in the Himalayas.
+
+============================================================================================
+EVERYDAY KNOWLEDGE (NOT WIKIPEDIA PHRASING)
+============================================================================================
+
+  'The sky is'
+    sample: blue.
+    greedy: blue and the birds are singing.
+
+  'Cats have four'
+    sample: players and a total of 484.
+    greedy: children.
+
+  'Water freezes at'
+    sample: a quick rate. 4. Preheat your drink to 400°C or 500°C. 5. Choose a safe and
+            comfortable drink. 6. Take a
+    greedy: the end of the day.
+
+  'There are seven days in a'
+    sample: year to get the job.
+    greedy: week.
+
+  'The opposite of hot is'
+    sample: the one that is used in most of Europe.
+    greedy: the same as the opposite of hot.
+
+  'Two plus two equals'
+    sample: 1 * 2 = 8 If the answer is a single question, then the answer is 5.
+    greedy: 2*4 = 6 equals 6 The result is 6.
+
+============================================================================================
+STRUCTURE (THE SHAPE OF WIKIPEDIA)
+============================================================================================
+
+  'Early life\\nHe was born'
+    sample: on February 19, 1969 in Philadelphia, Pennsylvania. He attended the
+            University of Pennsylvania and played in the National Football League.
+    greedy: in the village of Kędzierzyn-Koźle in the Świdwin Voivodeship, in eastern
+            Poland. He attended elementary school in Kędzierzyn-Koźle
+
+  'See also\\n'
+    sample: 
+    greedy: 
+
+  'The film received'
+    sample: positive reviews from critics and audiences alike. The film won several
+            awards and nominations, and received five nominations at the Golden Bear,
+            Independent Spirit Award, Screen Actors Guild Awards, and BAFTA Film Awards.
+            It
+    greedy: mixed reviews from critics.
+
+  'According to the 2011 census, the population was'
+    sample: 975.
+    greedy: 6,084. The village is located in the southern part of the island of Saint
+            Thomas, on the island of Saint Thomas. The island is bordered to the north by
+            the island of Saint Thomas
+
+============================================================================================
+CONTINUATION (LOCAL COHERENCE, NO RECALL)
+============================================================================================
+
+  'She opened the door slowly, and inside she saw'
+    sample: a large, dark room with strange lights, strange tools and strange things. She
+            smiled, and she knew that was just the thing. She was determined to find out
+            what this was just happening.
+    greedy: a big, fat cat. The cat was so fat that it couldn't even move. The little
+            girl was so excited that she started to run around the house. She was having
+            so much fun that
+
+  'The company was founded in 1998 and quickly grew to'
+    sample: become the largest private company of its kind, with revenues of $3.5 million
+            USD after a year.
+    greedy: become a leading supplier of high-quality products to the consumer market.
+
+  'Although the weather was cold, the children'
+    sample: were able to play in a circle. They played games like tag or hide and seek.
+            Sometimes they would find a toy they liked to hide. One day, the children
+            found a big sack and decided
+    greedy: were not able to play in the park.
+

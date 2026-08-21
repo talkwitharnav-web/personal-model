@@ -1,0 +1,9 @@
+[2026-08-19 09:50:42] fine-tune peek monitor started | every 900s | max 5.0h | watching checkpoints\finetune_v2_latest.pt
+[2026-08-19 09:50:46] step 9,000 | best val 1.5925 | blank 0/6 | stopped cleanly 6/6 | max loop 0.261 | free RAM 3,490 MB
+[2026-08-19 09:50:46]     definition   'a resonant transformer circuit invented by Nikola Tesla in 1891'
+[2026-08-19 09:50:46]     binding      'Alexander Fleming'
+[2026-08-19 09:50:46]     yesno        'Yes'
+[2026-08-19 09:50:46]     maths        'Natalia sold a total of 48 + 48 = 48 clips\nShe sold a total of 48 + 48 = 48 clips\nSo the answer is 48.'
+[2026-08-19 09:50:46]     chat         "It's a very popular colour."
+[2026-08-19 09:50:46]     instruction  'A dog is a good person.'
+[2026-08-19 09:50:46]     no collapse signals

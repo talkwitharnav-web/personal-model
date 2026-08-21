@@ -1,0 +1,21 @@
+[2026-08-19 05:32:11] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 05:48:37] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 05:49:37]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:05:52] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:06:52]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:22:56] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:23:56]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:40:00] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:41:02]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 06:57:10] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 06:58:11]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 07:14:16] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 07:15:17]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 07:31:28] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 07:32:28]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 07:48:37] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 07:49:37]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 08:05:55] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 08:06:55]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.
+[2026-08-19 08:22:59] trainer process is alive but has logged no new step in 16 min (stuck at 9,100) - treating as HUNG
+[2026-08-19 08:23:59]   the GPU driver is not answering either. The process is wedged in the driver and cannot be killed; this needs a reboot, not a restart. Waiting - the checkpoint on disk is safe.

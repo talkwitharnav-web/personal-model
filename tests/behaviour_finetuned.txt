@@ -1,0 +1,50 @@
+checkpoint checkpoints\finetune_v2_best.pt | step 45,000 | validation 1.6571
+
+=== open-ended (greedy) ===
+  [echo    ] ok   What is a Tesla coil?                               
+             -> 'It is a resonant transformer circuit invented by Nikola Tesla in 1891.'
+  [length  ] ok   What is a Tesla coil?                               
+             -> 'It is a resonant transformer circuit invented by Nikola Tesla in 1891.'
+  [echo    ] ok   Who is William Shakespeare?                         
+             -> 'an English playwright, poet and actor, widely regarded as the greatest writer in the English language'
+  [binding ] ok   Who invented the Tesla coil?                        
+             -> 'It was created by Nikola Tesla.'
+  [binding ] ok   Who discovered penicillin?                          
+             -> 'That was Alexander Fleming.'
+  [length  ] ok   When was the Tesla coil invented?                   
+             -> '1891'
+  [maths   ] MISS Natalia sold clips to 48 friends in April, then half
+             -> 'Natalia sold a total of 48 + 48 = 96 clips.\nShe sold 96 + 96 = 108 clips altogether.\nThe total is 108.'
+  [maths   ] MISS Weng earns $12 an hour. She babysat for 30 minutes. 
+             -> 'Weng earned $12 x 30 = $240.\nShe earned $240 x 2 = $240.\nShe earned $240 x 2 = $240.\nSo, she earned $240 + $24'
+
+=== yes/no (P(Yes) vs P(No)) ===
+  [polarity] ok   Is the sun hot?                                want Yes | Yes 0.1549 No 0.0537
+  [polarity] MISS Is the sun cold?                               want No  | Yes 0.0916 No 0.0327
+  [polarity] ok   Do fish have gills?                            want Yes | Yes 0.0194 No 0.0068
+  [polarity] MISS Do fish have lungs?                            want No  | Yes 0.0142 No 0.0055
+  [natural ] ok   is coconut oil high in saturated fat           want Yes | Yes 0.9166 No 0.0778
+  [natural ] MISS is coconut oil low in saturated fat            want No  | Yes 0.8277 No 0.1360
+  [binding ] ok   Was the Tesla coil invented by Nikola Tesla?   want Yes | Yes 0.5975 No 0.4012
+  [binding ] ok   Was the Tesla coil invented by Alexander Flemi want No  | Yes 0.3743 No 0.6251
+  [natural ] ok   Did Nikola Tesla invent the Tesla coil?        want Yes | Yes 0.6462 No 0.3112
+  [natural ] MISS Did Alexander Fleming invent the Tesla coil?   want No  | Yes 0.6062 No 0.3867
+
+=== polarity separation (the defect a per-question score hides) ===
+  MISS P(Yes) 0.1549 vs 0.0916 | gap 0.0633  'Is the sun hot?' vs 'Is the sun cold?'
+  MISS P(Yes) 0.0194 vs 0.0142 | gap 0.0052  'Do fish have gills?' vs 'Do fish have lungs?'
+  MISS P(Yes) 0.9166 vs 0.8277 | gap 0.0889  'is coconut oil high in saturated f' vs 'is coconut oil low in saturated fa'
+
+=== summary ===
+  echo         2/2  ####################
+  polarity     2/4  ##########
+  separation   0/3  
+  binding      4/4  ####################
+  natural      2/4  ##########
+  length       2/2  ####################
+  stopping     7/8  #################
+  refusal      8/8  ####################
+  maths        0/2  
+  OVERALL     27/37 (73%)
+
+Select fine-tune checkpoints on THIS, not on validation loss alone (section 8).

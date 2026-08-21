@@ -10,7 +10,9 @@ pad_id = tokenizer.token_to_id("<|endoftext|>")
 marker = tokenizer.encode("\nAssistant:").ids[1:]
 
 def tokenize_example(text):
-    full_ids = tokenizer.encode(text).ids
+    # train.txt was split ON <|endoftext|>, so put the real end marker back - without
+    # it the model is never taught to stop, and the trailing pad_ids stay masked.
+    full_ids = tokenizer.encode(text).ids + [pad_id]
     if len(full_ids) > config.context_length:
         return None
 

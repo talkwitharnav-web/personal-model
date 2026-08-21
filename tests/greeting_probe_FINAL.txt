@@ -1,0 +1,78 @@
+================================================================================================
+TRAINING DATA: how often is the FIRST user turn a bare greeting?
+================================================================================================
+  soda            40,000 conversations | opens with a greeting 17,307 (43.3%) | opener <=3 words  2,075 ( 5.2%)
+  personachat      8,637 conversations | opens with a greeting  6,963 (80.6%) | opener <=3 words  3,516 (40.7%)
+  oasst1          16,759 conversations | opens with a greeting    688 ( 4.1%) | opener <=3 words    407 ( 2.4%)
+  no_robots        8,737 conversations | opens with a greeting    240 ( 2.7%) | opener <=3 words     38 ( 0.4%)
+  dailydialog     11,118 conversations | opens with a greeting  1,681 (15.1%) | opener <=3 words    179 ( 1.6%)
+
+  BARE greetings (the whole first turn, <=2 words) across all of the above:
+      'hello'               593
+      'hi there'            586
+      'hi'                  515
+      'hey, mom'            248
+      'hey there'           131
+      'hey'                 104
+      'hey, dad'            101
+      "what's up"            89
+      'hey dad'              60
+      'hello there'          56
+      'hi, mom'              23
+      'hey, sarah'           19
+      total 2,951
+
+================================================================================================
+MODEL: checkpoints/finetune_v2_best.pt (step 45,000) - 4 samples per opener
+================================================================================================
+
+  'hey!'
+      greedy   Hello! I'm all ears.
+      x1       Hi there! Feel free to ask me anything.
+      x1       Hello! I'm all ears.
+
+  'hey'
+      greedy   I'm glad you're enjoying your time.
+      x1       Hey! I'm here and happy to help.
+      x1       I know, and it's perfect.
+
+  'hi'
+      greedy   Hello! I'm all ears.
+      x2       Hello! I'm all ears.
+      x1       Hi there! What are you working on?
+
+  'hello'
+      greedy   Hello! I'm all ears.
+      x2       Hello! I'm all ears.
+      x1       Hello! I'm ready when you are.
+
+  'yo'
+      greedy   I'm sorry, but there's nothing you can do about it.
+      x1       Yes
+      x1       I'm sorry, but it's just been really hard lately.
+
+  'good morning'
+      greedy   Good morning! How can I help you today?
+      x2       Good morning! How can I help you today?
+      x1       Good afternoon
+
+  'what's up'
+      greedy   I'm sorry, but there's nothing you can do about it.
+      x1       Hello! Is there something I can help you with?
+      x1       I'm sorry, but there's nothing else you can do.
+
+  'hey there'
+      greedy   Hey! I'm here. What do you need?
+      x2       Hey! I'm here. What do you need?
+      x1       Hi there! I'm here if you need anything.
+
+  'hi there'
+      greedy   Hi there! What are you working on?
+      x1       No problem!
+      x1       Hi there! How are you doing today?
+
+  'howdy'
+      greedy   It is a village in the municipality of Surdulica, Serbia.
+      x1       here are some tips for setting up a web browser that you can run on:
+1
+      x1       It is a video game published by SimCity Software in 1983 for the PC.

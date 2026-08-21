@@ -1,0 +1,6 @@
+[2026-08-17 22:15:41] watchdog started | poll 300s | silence limit 1200s | max restarts 3
+[2026-08-18 22:50:40] watchdog started | poll 300s | silence limit 1200s | max restarts 3
+[2026-08-19 01:01:15] watchdog started | poll 300s | silence limit 1200s | max restarts 3
+[2026-08-19 02:51:16] PRETRAIN COMPLETED (trainer printed its completion line). Exiting cleanly - nothing to restart.
+[2026-08-19 02:51:16]   last output: done in 30.3h | best validation 2.7667 | spikes 0 | best checkpoint checkpoints\pretrain_v2_best.pt | memory: current 259 MB | peak 2,174 MB (end of pretrain)
+[2026-08-19 02:51:16]   Next: ./.venv/Scripts/python.exe -m tools.finish_pretrain_and_finetune

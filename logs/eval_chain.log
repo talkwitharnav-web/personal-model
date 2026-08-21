@@ -1,0 +1,11 @@
+[2026-08-20 23:53:23] waiting for the fine-tune to finish before running the evaluation suite
+[2026-08-21 04:32:57]   done in 5.2h | best validation 1.6571
+[2026-08-21 04:32:57]   best checkpoint checkpoints\finetune_v2_best.pt
+[2026-08-21 04:32:57]     memory: working set 2,039 MB (peak 2,222) | private 7,019 MB (peak 7,250) (end of fine-tune)
+[2026-08-21 04:32:57] running the full evaluation suite (8 tools) - this takes about 20 minutes
+[2026-08-21 04:35:39] evaluation suite exited 0 - results in tests/*_FINAL.txt, console in C:\Users\arnav\Downloads\AI-TRAINING\logs\final_evaluation.log
+[2026-08-21 04:35:39]   OVERALL     27/37 (73%)
+[2026-08-21 04:35:39]   WITH context:   287/307  =  93.5%
+[2026-08-21 04:35:39]   NO context:      53/93   =  57.0%
+[2026-08-21 04:35:39]   overall:        340/400  =  85.0%   (chance 50.0%)
+[2026-08-21 04:35:39]   have 2-8 items each, so a one-item change moves the total by ~3% and means nothing

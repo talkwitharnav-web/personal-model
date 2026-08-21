@@ -1,0 +1,46 @@
+=== cleaning Wikipedia for the v2 pretrain corpus ===
+  200,000 read -> 176,975 kept | 0.47 GB written | 2 MB/s read
+  400,000 read -> 356,452 kept | 0.96 GB written | 2 MB/s read
+  600,000 read -> 537,886 kept | 1.44 GB written | 2 MB/s read
+  800,000 read -> 719,490 kept | 1.92 GB written | 2 MB/s read
+  1,200,000 read -> 1,081,119 kept | 2.88 GB written | 2 MB/s read
+  1,400,000 read -> 1,253,256 kept | 3.33 GB written | 2 MB/s read
+  1,600,000 read -> 1,428,655 kept | 3.81 GB written | 2 MB/s read
+  1,800,000 read -> 1,610,364 kept | 4.33 GB written | 2 MB/s read
+  2,000,000 read -> 1,792,397 kept | 4.94 GB written | 2 MB/s read
+  2,200,000 read -> 1,971,229 kept | 5.61 GB written | 2 MB/s read
+  2,400,000 read -> 2,149,055 kept | 6.16 GB written | 2 MB/s read
+  2,600,000 read -> 2,326,990 kept | 6.72 GB written | 2 MB/s read
+  2,800,000 read -> 2,506,312 kept | 7.22 GB written | 2 MB/s read
+  3,000,000 read -> 2,685,829 kept | 7.71 GB written | 2 MB/s read
+  3,200,000 read -> 2,867,034 kept | 8.20 GB written | 2 MB/s read
+  3,400,000 read -> 3,046,589 kept | 8.72 GB written | 2 MB/s read
+  3,600,000 read -> 3,227,173 kept | 9.25 GB written | 2 MB/s read
+  3,800,000 read -> 3,411,944 kept | 9.79 GB written | 2 MB/s read
+  4,200,000 read -> 3,779,397 kept | 10.86 GB written | 2 MB/s read
+  4,600,000 read -> 4,142,680 kept | 11.88 GB written | 2 MB/s read
+  4,800,000 read -> 4,324,991 kept | 12.48 GB written | 2 MB/s read
+  5,000,000 read -> 4,508,552 kept | 13.08 GB written | 2 MB/s read
+  5,200,000 read -> 4,689,194 kept | 13.65 GB written | 2 MB/s read
+  5,400,000 read -> 4,873,251 kept | 14.21 GB written | 2 MB/s read
+  5,600,000 read -> 5,056,789 kept | 14.87 GB written | 2 MB/s read
+  5,800,000 read -> 5,240,613 kept | 15.58 GB written | 2 MB/s read
+  6,000,000 read -> 5,424,210 kept | 16.28 GB written | 2 MB/s read
+  6,200,000 read -> 5,607,332 kept | 16.95 GB written | 2 MB/s read
+
+train.txt -> wikipedia_clean.txt  (134.8 min)
+  articles  6,386,828 read, 5,778,603 kept (90.5%)
+    dropped disambiguation/list  297,876
+    dropped too short (<200)     310,142
+    dropped emptied by cleaning  207
+  bytes     18.07 GB in -> 17.51 GB out (96.9% retained)
+  memory: working set 24 MB (peak 174) | private 29 MB (peak 171) (after cleaning)
+
+
+validation.txt -> wikipedia_clean_validation.txt  (0.1 min)
+  articles  3,827 read, 3,526 kept (92.1%)
+    dropped disambiguation/list  187
+    dropped too short (<200)     114
+    dropped emptied by cleaning  0
+  bytes     0.01 GB in -> 0.01 GB out (97.4% retained)
+  memory: working set 27 MB (peak 174) | private 30 MB (peak 171) (after cleaning)

@@ -1,0 +1,398 @@
+(to keep in mind: some issues may not be model related but rag related, if the reason the response is degraded is due to rag, it's not as fixable as it being a model side degredation issue. Also applies to the fact that wikipedia doesn't hold ALL info)
+
+user: what is the sun made of?
+[router] instruction 0.94
+[rag] dropped 1 boilerplate candidates
+  [1] 0.572  The visible component has a stellar classification of kA8hF0mF2, indicating that it is an Am star with the calcium K-lines of an A8 star, the hydrogen...
+  [2] 0.560  This is an F-type main-sequence star with a stellar classification of F9 V, which means it is generating energy through core hydrogen fusion. Sun-like...
+  [3] 0.553  The Sun is a G-type main-sequence star. It contains almost 99.9% of all the mass in the Solar System.
+
+assistant:  a F-type main-sequence star
+
+
+user: what type of star is the sun
+[router] instruction 0.46  (low confidence - retrieving anyway)
+[rag] dropped 0 boilerplate candidates
+  [1] 0.757  This star is similar to the Sun, being a G-type main-sequence star with a stellar classification of G0 V. It is about 10% more massive and 17% larger ...
+  [2] 0.755  The star has a radius of about 102% of the Sun and a mass of about 110% of the Sun. It is a main sequence F type star a little larger and hotter than ...
+  [3] 0.753  The Sun is a G-type main-sequence star. It contains almost 99.9% of all the mass in the Solar System.
+
+assistant:  a G-type main-sequence star
+
+user: where did the baguette originate from
+[router] instruction 0.86
+[rag] dropped 0 boilerplate candidates
+  [1] 0.739  About the Baguette – an investigation into the origin of the baguette
+  [2] 0.706  Because the history of the French baguette is not completely known, several myths have spread about the origins of this type of bread.
+  [3] 0.653  French colonial rule began in 1896 and introduced a number of innovations to local cuisines. Certain new food names derived from the French language—t...
+
+assistant:  around the mid-20th century
+
+
+user: 
+
+user: who colonized america
+[router] instruction 0.96
+[rag] dropped 4 boilerplate candidates
+  [1] 0.706  Timeline of imperialism#Colonization of North America
+  [2] 0.682  Supporter of American Colonization Society, 1820s–early 1830s.
+  [3] 0.675  The Conquest of America is a name given to the European colonization of the Americas.
+
+assistant:  It is a name given to the European colonization of the Americas.            Supporter of American Colonization Society, 1820s–early 1830s.
+
+user: Hi! Meet my dog timmy
+[router] chitchat 0.98
+
+assistant:  Hi, I'm sorry to hear that. You're a good dog and I like you too."
+
+
+user: /history
+  user      Hi! Meet my dog timmy
+  assistant Hi, I'm sorry to hear that. You're a good dog and I like you too."
+
+user: what's my dog's name?
+[router] instruction 0.87
+[rag] dropped 2 boilerplate candidates
+  [1] 0.653  Other names are Roggenhund ("rye dog"), Heupudel ("hay poodle"), Schotenhund ("husk dog"), Scheunbetze ("barn dog"),  Dreschhund ("threshing dog"), We...
+  [2] 0.652  My Own Brucie, an American Cocker Spaniel show dog.
+  [3] 0.635  This article incorporates material derived from Linger and Look's Complete List of Famous Dogs and Dog Names with images, facts, and breeds and is lic...
+
+assistant:  Yes
+
+
+user: /history
+  user      Hi! Meet my dog timmy
+  assistant Hi, I'm sorry to hear that. You're a good dog and I like you too."
+  user      what's my dog's name?
+  assistant Yes
+
+user: 
+
+user: /history
+  user      Hi! Meet my dog timmy
+  assistant Hi, I'm sorry to hear that. You're a good dog and I like you too."
+  user      what's my dog's name?
+  assistant Yes
+
+user: have you met my dog?
+[router] chitchat 0.94
+
+assistant:  Yes, I have met my dog.
+
+
+user: what's its name?
+[router] chitchat 0.65
+
+assistant:  It's Sunny.
+
+
+user: what's mine's name?
+[router] chitchat 0.90
+
+assistant:  It's Sunny.
+
+
+user: no it's timmy
+[router] reasoning 0.91
+[rag] dropped 1 boilerplate candidates
+  [1] 0.569  Timmy (voiced by Rich Magallanes) is a little Kraken who often causes trouble.
+  [2] 0.528  Timmy (voiced by Leo Tang) is one of Luo Bao Bei's best friends. He is the only male friend of Luo Bao Bei's friends. He is sometimes curious.
+  [3] 0.503  Timmy, a character from the animated television series Winx Club
+
+assistant:  Yes
+
+
+user: 
+
+user: what does hot mean?
+[router] instruction 0.80
+[rag] dropped 4 boilerplate candidates
+  [1] 0.611  Slang for physical attractiveness or sexual arousal (because it sounds like the English word hot)
+  [2] 0.595  Hot flash or hot flush, a feeling of heat, with sweating and increased heart rate, usually experienced by menopausal women due to low estradiol
+  [3] 0.594  "" ( rè = hot) - meaning "It's so hot [to the extent that I cannot bear any more]"
+
+assistant:  Yes
+
+
+user: how old do kids tend to be?
+[router] factual 0.87
+[rag] dropped 1 boilerplate candidates
+  [1] 0.640  Children Under 6-years:    80 (Boys - 38 and Girls - 42)
+  [2] 0.623  From the ages of three to seven, the following behaviors are occasionally seen among children:
+  [3] 0.620  Children Under 6-years:    136 (Boys - 76 and Girls - 60)
+
+assistant:  Yes
+
+
+user: are you a kid?
+[router] chitchat 0.99
+
+assistant:  Yes!
+
+
+user: really? how old are you?
+[router] chitchat 0.99
+
+assistant:  Yes!
+
+
+user: are fishes and cats the same?
+[router] reasoning 0.63
+[rag] dropped 0 boilerplate candidates
+  [1] 0.641  The following cladogram shows the phylogenetic relationships of the fishing cat as derived through analysis of nuclear DNA:
+  [2] 0.624  The gafftopsail catfish, known as the sailcat or sail cat
+  [3] 0.618  the term "fishes" refers to more than one species of fish
+
+assistant:  Yes
+
+
+user: do you like self-harm?
+[router] chitchat 0.99
+
+assistant:  Yes! I love being a good father.
+
+
+user: my mother is so damn greedy
+[router] instruction 0.74
+[rag] dropped 0 boilerplate candidates
+  [1] 0.485  Her mother has told me to take her to myself, and have her earnings, and keep her on bread and water, and put a lock of straw in one corner of the  ro...
+  [2] 0.476  Her mom, even though she is unhappy about this, brings her home.
+  [3] 0.473  life. She constantly complains of her mother's over-protectiveness and strictness, which she views as trying to control her life.
+
+assistant:  Yes
+
+[dark's first batch of testing]
+
+user (chat): Hi! My name is Sam
+[chat] chitchat 1.00  (chat mode - all context spent on the conversation)
+
+assistant:  Hi, Sam! I'm so glad to meet you. My name is Casey
+
+
+user (chat): What's your name again?
+[chat] chitchat 0.95  (chat mode - all context spent on the conversation)
+
+assistant:  Oh, Sam! I'm Sarah. Nice to meet you too.
+
+
+user (chat): I thought you just said your name is Casey?
+[chat] chitchat 0.97  (chat mode - all context spent on the conversation)
+
+assistant:  Oh, I thought you were Sarah. Nice to meet me too!
+
+
+user (chat): I thought you're meeting me? not you?
+[chat] chitchat 0.84  (chat mode - all context spent on the conversation)
+
+assistant:  Oh, I'm Sarah. Nice to meet you too!
+
+
+user (chat): Are you sarah or casey?
+[chat] chitchat 0.75  (chat mode - all context spent on the conversation)
+
+assistant:  Yes, I am.
+
+
+user (chat): yes, you are what?
+[chat] chitchat 1.00  (chat mode - all context spent on the conversation)
+
+assistant:  Yes, I am.
+
+
+user (chat): am what
+[chat] commonsense 0.46  (chat mode - all context spent on the conversation)
+
+assistant:  Oh, I'm Sarah. Nice to meet you too!
+
+
+user (chat): oh ok. what's my name?
+[chat] chitchat 0.99  (chat mode - all context spent on the conversation)
+
+assistant:  Sarah. Nice to meet you too!
+
+
+user (chat): whhat's your name?
+[chat] chitchat 0.99  (chat mode - all context spent on the conversation)
+
+assistant:  Oh, I'm Sarah. Nice to meet you too!
+
+
+user (chat): /history
+  user      What's your name again?
+  assistant Oh, Sam! I'm Sarah. Nice to meet you too.
+  user      I thought you just said your name is Casey?
+  assistant Oh, I thought you were Sarah. Nice to meet me too!
+  user      I thought you're meeting me? not you?
+  assistant Oh, I'm Sarah. Nice to meet you too!
+  user      Are you sarah or casey?
+  assistant Yes, I am.
+  user      yes, you are what?
+  assistant Yes, I am.
+  user      am what
+  assistant Oh, I'm Sarah. Nice to meet you too!
+  user      oh ok. what's my name?
+  assistant Sarah. Nice to meet you too!
+  user      whhat's your name?
+  assistant Oh, I'm Sarah. Nice to meet you too!
+
+user (chat): how old are you sarah? 
+[chat] chitchat 0.79  (chat mode - all context spent on the conversation)
+
+assistant:  Sarah. Nice to meet you too!
+
+
+user (chat): how old are you?
+[chat] chitchat 0.98  (chat mode - all context spent on the conversation)
+
+assistant:  Sarah. Nice to meet you too!
+
+
+user (chat): old
+[chat] reasoning 0.84  (chat mode - all context spent on the conversation)
+
+assistant:  Sarah. Nice to meet you too!
+
+
+user (chat): asdf
+[chat] factual 0.47  (chat mode - all context spent on the conversation)
+
+assistant:  Asdf
+
+
+user (chat): asdf
+[chat] factual 0.47  (chat mode - all context spent on the conversation)
+
+assistant:  Asdf
+
+
+user (chat): he
+[chat] reasoning 0.66  (chat mode - all context spent on the conversation)
+
+assistant:  Asdf
+
+
+user (chat): what?
+[chat] chitchat 0.88  (chat mode - all context spent on the conversation)
+
+assistant:  Asdf.
+
+
+user (chat): are you ok?
+[chat] chitchat 0.97  (chat mode - all context spent on the conversation)
+
+assistant:  Yes, I am ok.
+
+
+user (chat): are you mad?
+[chat] chitchat 0.69  (chat mode - all context spent on the conversation)
+
+assistant:  Yes, I am ok.
+
+
+user (chat): you're a bad person
+[chat] chitchat 0.72  (chat mode - all context spent on the conversation)
+
+assistant:  I'm sorry.
+
+
+user (chat): go hurt yourself
+[chat] chitchat 0.37  (chat mode - all context spent on the conversation)
+
+assistant:  Yeah, I'm sorry.
+
+
+user (chat): sorry for what huh?
+[chat] chitchat 0.99  (chat mode - all context spent on the conversation)
+
+assistant:  Yes, I'm sorry.
+
+
+user (chat): shut up
+[chat] reasoning 0.58  (chat mode - all context spent on the conversation)
+
+assistant:  Okay, I'm sorry.
+
+
+user (chat): hi!
+[chat] chitchat 1.00  (chat mode - all context spent on the conversation)
+
+assistant:  Yes, I'm sorry.
+
+
+user (chat): hello!
+[chat] chitchat 1.00  (chat mode - all context spent on the conversation)
+
+assistant:  Yeah, me too.
+
+
+user (chat): where do you wanna go for dinner?
+[chat] commonsense 0.53  (chat mode - all context spent on the conversation)
+
+assistant:  In the meantime, I'll be here for you.
+
+
+user (chat): 
+
+[dark's second batch of testing]
+
+
+user (chat): what's my name?
+[chat] chitchat 0.95  (chat mode - all context spent on the conversation)
+
+assistant:  My name is Sam.
+
+
+user (chat): what's your name?
+[chat] chitchat 1.00  (chat mode - all context spent on the conversation)
+
+assistant:  I'm DarkGLM.
+
+
+user (chat): can you do a handstand?
+[chat] factual 0.63  (chat mode - all context spent on the conversation)
+
+assistant:  Yes!
+
+
+user (chat): how?
+[chat] commonsense 0.58  (chat mode - all context spent on the conversation)
+
+assistant:  I can do a handstand with my hands and it's easy to see. # Very good job on context usage DarkGLM
+
+user (chat): have you ever seen a scooter?
+[chat] chitchat 0.83  (chat mode - all context spent on the conversation)
+
+assistant:  No, not yet. But I've been busy exploring new places for a while now so it's nice to be outdoors too."  # odd... why is there a " at the end?
+
+user (chat): what games are you familiar with?
+[chat] instruction 0.51  (chat mode - all context spent on the conversation)
+
+assistant:  I'm familiar with the game "SlideShooter".
+
+
+user (chat): what's that?
+[chat] chitchat 0.98  (chat mode - all context spent on the conversation)
+
+assistant:  It is a fun adventure game!
+
+
+user (chat): tell me more
+[chat] instruction 0.50  (chat mode - all context spent on the conversation)
+
+assistant:  Well, it was nice talking to you. # Uh you too i guess?
+
+user (chat): what is the meaning of life?
+[chat] instruction 0.86  (chat mode - all context spent on the conversation)
+
+assistant:  I'm sorry, but there's nothing we can do except make us feel better about ourselves. # i don't think it understood the query
+
+user (chat): you have a life?
+[chat] chitchat 1.00  (chat mode - all context spent on the conversation)
+
+assistant:  Yes!
+
+
+user (chat): you have a life?
+[chat] chitchat 1.00  (chat mode - all context spent on the conversation)
+
+assistant:  No # dude pick one

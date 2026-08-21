@@ -1,0 +1,3 @@
+[2026-08-19 15:06:07] fine-tune watchdog started | poll 120s | needs 2,600 MB free to (re)start | max 25 restarts
+[2026-08-19 15:06:08] trainer is down at step 4,700, but only 1,840 MB free (need 2,600) - waiting rather than restarting into an OOM
+[2026-08-19 15:08:10] restart 1/25: trainer was down at step 4,700, 2,712 MB free -> started PID 7856 (resumes from the latest checkpoint)
